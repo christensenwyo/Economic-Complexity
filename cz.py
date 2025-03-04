@@ -21,7 +21,7 @@ df = df.drop(['Area Bucket', 'Industry Bucket'], axis=1)
 df = df[~df['Area Name'].str.contains("county not reported", case=False, na=False)]
 
 #get that crosswalk in there
-file_path_cw = "C:/Users/ConnorChristensen/OneDrive - Wyoming Business Council/Documents/Analysis/county20.csv"  
+file_path_cw = "C:/Users/ConnorChristensen/OneDrive - Wyoming Business Council/Documents/GitHub/Economic-Complexity/county20.csv"  
 cw = pd.read_csv(file_path_cw)
 
 #merge it up
