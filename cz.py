@@ -6,6 +6,11 @@ Created on Thu Feb 27 12:24:50 2025
 """
 
 import pandas as pd
+import numpy as np
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 #full lightcast data pull
 file_path = "C:/Users/ConnorChristensen/OneDrive - Wyoming Business Council/Documents/Analysis/lc_data24.csv"  
@@ -31,11 +36,6 @@ df_merged = df.merge(cw, left_on="Area", right_on="GEOID", how="left")
 df_merged = df_merged.drop(['GEOID'], axis=1)
 
 ###############################################################################
-
-import numpy as np
-import statsmodels.api as sm
-import statsmodels.formula.api as smf
-import matplotlib.pyplot as plt
 
 # Ensure 'Jobs' column is numeric
 df_merged['Jobs'] = pd.to_numeric(df['Jobs'], errors='coerce')
@@ -169,7 +169,7 @@ df_cz = df_cz.merge(df_scaling, on="Industry", how="left")
 print(df_cz.head())
 
 ###############################################################################
-import seaborn as sns
+
 # Plot histogram and density plot
 plt.figure(figsize=(10, 6))
 
@@ -185,6 +185,10 @@ plt.title("Distribution of Industry Scaling Coefficients", fontsize=14)
 plt.grid(True, linestyle="--", alpha=0.6)
 ###############################################################################
 
+
+
+
+'''
 import statsmodels.discrete.count_model as cm
 
 def run_ppml_with_zeros(df, naics_code, zero_handling="poisson"):
@@ -350,7 +354,7 @@ find_top_ppml_fits(df_merged, top_n=5)
 
 
 
-'''
+
 #################################################################################
 def run_ppml(df, industry):
     """
@@ -409,17 +413,9 @@ def run_ppml(df, industry):
 run_ppml(df_merged, industry="Research and Development in Nanotechnology")
 
 
-'''
 
 
-
-
-
-
-
-###################################################################################
-
-'''
+###############################################################################
 def run_ppml_ns(df, industry):
     """
     Runs a Pseudo-Poisson Maximum Likelihood (PPML) regression for a specific industry
@@ -477,7 +473,7 @@ def run_ppml_ns(df, industry):
 run_ppml_ns(df_merged, industry="Testing Laboratories")
 
 
-'''
+
 
 
 
@@ -485,7 +481,7 @@ run_ppml_ns(df_merged, industry="Testing Laboratories")
 
 
 ###############################################################################
-'''
+
 
 def estimate_scaling_exponent(df, industry):
     """
@@ -562,16 +558,7 @@ def estimate_scaling_exponent(df, industry):
 # Example usage:
 estimate_scaling_exponent(df_merged, industry="Testing Laboratories")
 
-'''
-
-
-
-
-
-
-
-
-'''
+###############################################################################
 
 def run_ppml_and_plot(df, industry, cz20):
     """
@@ -626,5 +613,5 @@ def run_ppml_and_plot(df, industry, cz20):
 
 run_ppml_and_plot(df_merged, industry="Commercial and Institutional Building Construction", cz20=152)
 
-
 '''
+
