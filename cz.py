@@ -50,7 +50,7 @@ df_merged['Total_CZ_Employment'] = df_merged.groupby('CZ20')['Jobs'].transform('
 df_merged['Employment_Share'] = df_merged['Total_Employment'] / df_merged['Total_CZ_Employment']
 
 #collapsed data
-df_cz = df_merged[['CZ20', 'Industry', 'Industry Name', 'Total_CZ_Employment', 'Employment_Share']].drop_duplicates()
+df_cz = df_merged[['CZ20', 'Industry', 'Industry Name', 'Jobs', 'Total_CZ_Employment', 'Employment_Share']].drop_duplicates()
 
 # Compute log transformations
 df_cz['Log_Total_CZ_Employment'] = np.log(df_cz['Total_CZ_Employment'])
@@ -86,7 +86,7 @@ def run_ppml(df, naics_code):
     df_industry = df_industry.replace([np.inf, -np.inf], np.nan).dropna()
 
     # Define the regression formula
-    formula = "Employment_Share ~ Log_Total_CZ_Employment + Log_Total_CZ_Employment_Squared"
+    formula = "Jobs ~ Log_Total_CZ_Employment + Log_Total_CZ_Employment_Squared"
 
     # Run PPML regression across all zones
     model = smf.glm(formula=formula, data=df_industry, family=sm.families.Poisson()).fit()
@@ -94,22 +94,22 @@ def run_ppml(df, naics_code):
     # Print regression summary
     print(model.summary())
 
-    # Plot Employment Share vs Log Total Employment for all zones
+    # Plot Jobs vs Log Total Employment for all zones
     plt.figure(figsize=(8, 5))
-    plt.scatter(df_industry['Log_Total_CZ_Employment'], df_industry['Employment_Share'], alpha=0.5, label='Data')
+    plt.scatter(df_industry['Log_Total_CZ_Employment'], np.log(df_industry['Jobs']), alpha=0.5, label='Data')
 
     # Generate predicted values
-    df_industry['Predicted_Share'] = model.predict(df_industry)
+    df_industry['Predicted_Jobs'] = model.predict(df_industry)
 
     # Sort values for smooth line
     sorted_df = df_industry.sort_values('Log_Total_CZ_Employment')
 
     # Plot regression line
-    plt.plot(sorted_df['Log_Total_CZ_Employment'], sorted_df['Predicted_Share'], color='red', label='PPML Fit')
+    plt.plot(sorted_df['Log_Total_CZ_Employment'], np.log(sorted_df['Predicted_Jobs']), color='red', label='PPML Fit')
 
     # Labels and title
-    plt.xlabel("Log Total Employment")
-    plt.ylabel("Employment Share")
+    plt.xlabel("Log Total Employment in CZ")
+    plt.ylabel("Log Employment in Industry in CZ")
     plt.title(f"PPML Regression for {industry_name} (NAICS {naics_code})")
     plt.legend()
     plt.grid(True)
@@ -118,7 +118,7 @@ def run_ppml(df, naics_code):
     plt.show()
 
 # Example usage:
-run_ppml(df_cz, naics_code=334220)
+run_ppml(df_cz, naics_code=541611)
 
 ###############################################################################
 
@@ -141,7 +141,7 @@ for naics_code in naics_codes:
         continue  # Skip industries with too few data points
 
     # Define the regression formula
-    formula = "Employment_Share ~ Log_Total_CZ_Employment + Log_Total_CZ_Employment_Squared"
+    formula = "Jobs ~ Log_Total_CZ_Employment + Log_Total_CZ_Employment_Squared"
 
     try:
         # Run Poisson regression
@@ -184,6 +184,39 @@ plt.title("Distribution of Industry Scaling Coefficients", fontsize=14)
 # Show grid for better readability
 plt.grid(True, linestyle="--", alpha=0.6)
 ###############################################################################
+
+def print_top_bottom_scaling(df):
+    """
+    Prints the three industries with the highest and lowest median scaling coefficients.
+
+    Parameters:
+    df (DataFrame): The dataset containing industry scaling coefficients.
+    """
+
+    # Drop missing values
+    df_filtered = df.dropna(subset=["Scaling_Coefficient_Beta1"])
+
+    # Aggregate by Industry: Compute median scaling coefficient
+    df_grouped = df_filtered.groupby(["Industry", "Industry Name"])["Scaling_Coefficient_Beta1"].median().reset_index()
+
+    # Sort by scaling coefficient
+    df_sorted = df_grouped.sort_values("Scaling_Coefficient_Beta1", ascending=False)
+
+    # Get the top 3 and bottom 3 industries
+    top_3 = df_sorted.head(3)
+    bottom_3 = df_sorted.tail(3)
+
+    # Print results
+    print("\nIndustries with the Three Highest Scaling Coefficients:")
+    for _, row in top_3.iterrows():
+        print(f"Industry: {row['Industry Name']} (NAICS {row['Industry']}), Scaling Coefficient: {row['Scaling_Coefficient_Beta1']:.3f}")
+
+    print("\nIndustries with the Three Lowest Scaling Coefficients:")
+    for _, row in bottom_3.iterrows():
+        print(f"Industry: {row['Industry Name']} (NAICS {row['Industry']}), Scaling Coefficient: {row['Scaling_Coefficient_Beta1']:.3f}")
+
+# Run the function on df_cz
+print_top_bottom_scaling(df_cz)
 
 
 
