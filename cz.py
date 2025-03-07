@@ -541,5 +541,3 @@ Next steps:
         May be sufficiently complex to rate a plotly interactive program
 '''
 ###############################################################################
-
-#Hi Vinicius
