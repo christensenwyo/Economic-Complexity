@@ -1,0 +1,51 @@
+250307 Economic Complexity Findings
+(Values represent the positive deviation from the expected value, by total percentage points, not by percent difference)
+
+City Name: Fort Collins, CO
+  - General Medical and Surgical Hospitals: 0.71%
+  - Colleges, Universities, and Professional Schools (State Government): 0.67%
+  - Full-Service Restaurants: 0.47%
+  - Hotels (except Casino Hotels) and Motels: 0.35%
+  - Animal (except Poultry) Slaughtering: 0.19%
+
+City Name: Billings, MT
+  - General Medical and Surgical Hospitals: 2.98%
+  - Commercial Banking: 0.97%
+  - Petroleum Refineries: 0.79%
+  - Other Metal Ore Mining: 0.77%
+  - Full-Service Restaurants: 0.68%
+
+City Name: Bozeman, MT
+  - State Government, Excluding Education and Hospitals: 3.84%
+  - Hotels (except Casino Hotels) and Motels: 1.94%
+  - Colleges, Universities, and Professional Schools (State Government): 1.62%
+  - Full-Service Restaurants: 1.05%
+  - Supermarkets and Other Grocery (except Convenience) Stores: 0.64%
+
+City Name: Rapid City, SD
+  - Federal Government, Civilian, Excluding Postal Service: 1.73%
+  - General Medical and Surgical Hospitals: 1.39%
+  - Casino Hotels: 0.87%
+  - Hotels (except Casino Hotels) and Motels: 0.74%
+  - Local Government, Excluding Education and Hospitals: 0.64%
+
+City Name: Scottsbluff, NE
+  - State Government, Excluding Education and Hospitals: 1.20%
+  - Services for the Elderly and Persons with Disabilities: 0.45%
+  - Hospitals (Local Government): 0.38%
+  - Hazardous Waste Treatment and Disposal: 0.34%
+  - Crop Production: 0.29%
+
+City Name: Pocatello, ID
+  - Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology): 0.84%
+  - Local Government, Excluding Education and Hospitals: 0.78%
+  - Elementary and Secondary Schools (Local Government): 0.57%
+  - Hazardous Waste Treatment and Disposal: 0.52%
+  - Limited-Service Restaurants: 0.51%
+
+City Name: Logan, UT
+  - Colleges, Universities, and Professional Schools (State Government): 2.69%
+  - Elementary and Secondary Schools (Local Government): 2.46%
+  - Guided Missile and Space Vehicle Propulsion Unit and Propulsion Unit Parts Manufacturing: 1.97%
+  - Cheese Manufacturing: 1.58%
+  - Other Accounting Services: 1.57%
