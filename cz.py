@@ -12,6 +12,8 @@ import statsmodels.formula.api as smf
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
+
 #full lightcast data pull
 file_path = "C:/Users/ConnorChristensen/OneDrive - Wyoming Business Council/Documents/Analysis/lc_data24.csv"  
 df = pd.read_csv(file_path)
@@ -30,31 +32,35 @@ file_path_cw = "C:/Users/ConnorChristensen/OneDrive - Wyoming Business Council/D
 cw = pd.read_csv(file_path_cw)
 
 #merge it up
-df_merged = df.merge(cw, left_on="Area", right_on="GEOID", how="left")
+df = df.merge(cw, left_on="Area", right_on="GEOID", how="left")
 
 #drop the GEOID, it's already represented with "Area"
-df_merged = df_merged.drop(['GEOID'], axis=1)
+df = df.drop(['GEOID'], axis=1)
 
 ###############################################################################
 
 # Ensure 'Jobs' column is numeric
-df_merged['Jobs'] = pd.to_numeric(df['Jobs'], errors='coerce')
+df['Jobs'] = pd.to_numeric(df['Jobs'], errors='coerce')
 
 # Compute total employment for each industry within each commuting zone
-df_merged['Total_Employment'] = df_merged.groupby(['CZ20', 'Industry'])['Jobs'].transform('sum')
+df['Total_Employment'] = df.groupby(['CZ20', 'Industry'])['Jobs'].transform('sum')
 
 # Compute total employment in each commuting zone across all industries
-df_merged['Total_CZ_Employment'] = df_merged.groupby('CZ20')['Jobs'].transform('sum')
+df['Total_CZ_Employment'] = df.groupby('CZ20')['Jobs'].transform('sum')
 
 # Calculate industry's share of total employment in the commuting zone
-df_merged['Employment_Share'] = df_merged['Total_Employment'] / df_merged['Total_CZ_Employment']
+df['Employment_Share'] = df['Total_Employment'] / df['Total_CZ_Employment']
 
 #collapsed data
-df_cz = df_merged[['CZ20', 'Industry', 'Industry Name', 'Jobs', 'Total_CZ_Employment', 'Employment_Share']].drop_duplicates()
+df = df[['CZ20', 'Area', 'Area Name', 'Industry', 'Industry Name', 'Jobs', 'Total_CZ_Employment', 'Employment_Share']].drop_duplicates()
 
 # Compute log transformations
-df_cz['Log_Total_CZ_Employment'] = np.log(df_cz['Total_CZ_Employment'])
-df_cz['Log_Total_CZ_Employment_Squared'] = df_cz['Log_Total_CZ_Employment'] ** 2
+df['Log_Total_CZ_Employment'] = np.log(df['Total_CZ_Employment'])
+df['Log_Total_CZ_Employment_Squared'] = df['Log_Total_CZ_Employment'] ** 2
+
+
+
+###############################################################################
 
 
 
@@ -114,13 +120,382 @@ def run_ppml(df, naics_code):
     plt.legend()
     plt.grid(True)
     
+    # Prevent y-axis from dropping below zero
+    plt.ylim(bottom=0)
+    
     # Show plot
     plt.show()
 
 # Example usage:
-run_ppml(df_cz, naics_code=541611)
+run_ppml(df, naics_code=513210)
 
 ###############################################################################
+
+
+def run_ppml_sj(df, naics_code):
+    """
+    Runs a Pseudo-Poisson Maximum Likelihood (PPML) regression for a specific industry
+    identified by its 6-digit NAICS code across all commuting zones (CZ20) 
+    and generates a single plot.
+    
+    Parameters:
+    df (DataFrame): The dataset containing employment data.
+    naics_code (int or str): The 6-digit NAICS code of the industry.
+    """
+
+    # Convert NAICS code to string (in case it's stored as int)
+    naics_code = str(naics_code)
+
+    # Retrieve the industry name corresponding to the NAICS code
+    if naics_code not in df['Industry'].astype(str).values:
+        print(f"No data available for NAICS code {naics_code}.")
+        return
+
+    industry_name = df[df['Industry'].astype(str) == naics_code]['Industry Name'].iloc[0]
+
+    # Filter the dataset for the given NAICS industry
+    df_industry = df[df['Industry'].astype(str) == naics_code].copy()
+
+    # Drop missing or infinite values
+    df_industry = df_industry.replace([np.inf, -np.inf], np.nan).dropna()
+
+    # Define the regression formula
+    formula = "Employment_Share ~ Log_Total_CZ_Employment"
+
+    # Run PPML regression across all zones
+    model = smf.glm(formula=formula, data=df_industry, family=sm.families.Poisson()).fit()
+
+    # Print regression summary
+    print(model.summary())
+
+    # Plot Jobs vs Log Total Employment for all zones
+    plt.figure(figsize=(8, 5))
+    plt.scatter(np.log(df_industry['Total_CZ_Employment']), (df_industry['Employment_Share']), alpha=0.5, label='Data')
+
+    # Generate predicted values
+    df_industry['Predicted_Jobs_Sh'] = model.predict(df_industry)
+
+    # Sort values for smooth line
+    sorted_df = df_industry.sort_values('Log_Total_CZ_Employment')
+
+    # Plot regression line
+    plt.plot(sorted_df['Log_Total_CZ_Employment'], (sorted_df['Predicted_Jobs_Sh']), color='red', label='PPML Fit')
+
+    # Labels and title
+    plt.xlabel("Log Total Employment in CZ")
+    plt.ylabel("Employment Share in Industry in CZ")
+    plt.title(f"PPML Regression for {industry_name} (NAICS {naics_code})")
+    plt.legend()
+    plt.grid(True)
+
+    
+    # Show plot
+    plt.show()
+
+# Example usage:
+run_ppml_sj(df, naics_code=513210)
+
+
+
+
+###############################################################################
+
+def get_commuting_zone(df, county_name):
+    """
+    Returns the commuting zone (CZ20) for a given county name.
+    
+    Parameters:
+    df (DataFrame): The dataset containing "Area Name" (county names) and "CZ20" (commuting zones).
+    county_name (str): The name of the county to look up.
+    
+    Returns:
+    array or None: The unique commuting zone(s) if found, otherwise None.
+    """
+    result = df[df["Area Name"].str.contains(county_name, case=False, na=False)]
+    return result["CZ20"].unique() if not result.empty else None
+
+
+
+county_name = "Larimer County, CO"                            #Fort Collins, CO
+larimer = get_commuting_zone(df, county_name)
+print(f"Commuting Zone for {county_name}: {larimer}")
+
+county_name = "Yellowstone County, MT"                            #Billings, MT
+yellowstone = get_commuting_zone(df, county_name)
+print(f"Commuting Zone for {county_name}: {yellowstone}")
+
+county_name = "Gallatin County, MT"                                #Bozeman, MT
+gallatin = get_commuting_zone(df, county_name)
+print(f"Commuting Zone for {county_name}: {gallatin}")
+
+county_name = "Pennington County, SD"                           #Rapid City, SD
+pennington = get_commuting_zone(df, county_name)
+print(f"Commuting Zone for {county_name}: {pennington}")
+
+county_name = "Scotts Bluff County, NE"                        #Scottsbluff, NE
+scottsbluff = get_commuting_zone(df, county_name)
+print(f"Commuting Zone for {county_name}: {scottsbluff}")
+
+county_name = "Bannock County, ID"                               #Pocatello, ID
+bannock = get_commuting_zone(df, county_name)
+print(f"Commuting Zone for {county_name}: {bannock}")
+
+county_name = "Cache County, UT"                                     #Logan, UT
+cache = get_commuting_zone(df, county_name)
+print(f"Commuting Zone for {county_name}: {cache}")
+
+county_name = "Weber County, UT"                                     #Ogden, UT
+weber = get_commuting_zone(df, county_name)
+print(f"Commuting Zone for {county_name}: {weber}")
+
+###############################################################################
+
+# Combine all commuting zones into a set (removes duplicates)
+target_czs = set()
+
+for cz in [larimer, yellowstone, gallatin, pennington, scottsbluff, bannock, cache, weber]:
+    if cz is not None:
+        if isinstance(cz, np.ndarray):  # Extract value if it's an array
+            target_czs.update(cz.tolist())
+        else:
+            target_czs.add(cz)
+            
+# Convert to sorted list for readability
+target_czs = sorted(target_czs)
+print(f"Target Commuting Zones: {target_czs}")
+
+
+
+
+# Filter dataset to only the selected commuting zones
+df_filtered = df[df['CZ20'].isin(target_czs)]
+
+# Check if filtering worked
+print(df_filtered['CZ20'].unique()) 
+
+###############################################################################
+
+print(df_filtered.shape)  # Should have at least some rows
+print(df_filtered['Industry'].value_counts())
+
+
+###############################################################################
+
+
+df_filtered['Industry'] = df_filtered['Industry'].astype(str)
+
+###############################################################################
+
+
+scaling_coefficients = {}
+
+for naics_code in df_filtered['Industry'].astype(str).unique():
+    df_industry = df_filtered[df_filtered['Industry'] == naics_code].copy()
+    
+    print(f"Processing Industry: {naics_code}, Observations: {len(df_industry)}")  # Debugging print
+
+    if len(df_industry) < 10:
+        continue  # Skip industries with too few data points
+
+    formula = "Jobs ~ Log_Total_CZ_Employment + Log_Total_CZ_Employment_Squared"
+
+    try:
+        model = smf.glm(formula=formula, data=df_industry, family=sm.families.Poisson()).fit()
+        
+        # Extract coefficients
+        beta_0 = model.params.get("Intercept", np.nan)  
+        beta_1 = model.params.get("Log_Total_CZ_Employment", np.nan)
+        beta_2 = model.params.get("Log_Total_CZ_Employment_Squared", np.nan)  
+
+        # Store all coefficients
+        scaling_coefficients[naics_code] = (beta_0, beta_1, beta_2)
+
+    except Exception as e:
+        print(f"Error processing NAICS {naics_code}: {e}")
+
+# Convert to DataFrame
+df_scaling = pd.DataFrame.from_dict(scaling_coefficients, orient="index", 
+                                    columns=["Intercept", "Scaling_Coefficient_Beta1", "Beta2"])
+df_scaling.reset_index(inplace=True)
+df_scaling.rename(columns={"index": "Industry"}, inplace=True)
+
+
+
+
+###############################################################################
+
+
+df_filtered = df_filtered.merge(df_scaling, on="Industry", how="left")
+
+# Compute expected employment using the scaling model
+df_filtered['Expected_Jobs'] = np.exp(
+    df_filtered['Intercept'] + 
+    df_filtered['Scaling_Coefficient_Beta1'] * df_filtered['Log_Total_CZ_Employment'] + 
+    df_filtered['Beta2'] * df_filtered['Log_Total_CZ_Employment_Squared']
+)
+
+# Compute employment deviation (actual - expected)
+df_filtered['Employment_Deviation'] = df_filtered['Jobs'] - df_filtered['Expected_Jobs']
+
+# Display the top industries with the highest deviations
+df_filtered.sort_values(by="Employment_Deviation", ascending=False).head(10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Create a dictionary to store coefficients
+scaling_coefficients = {}
+
+# Loop through each industry in the dataset
+for naics_code in df['Industry'].astype(str).unique():
+    df_industry = df[df['Industry'].astype(str) == naics_code].copy()
+    
+    # Ensure enough data points
+    if len(df_industry) < 10:
+        continue  # Skip industries with too few data points
+    
+    # Define regression formula
+    formula = "Jobs ~ Log_Total_CZ_Employment + Log_Total_CZ_Employment_Squared"
+
+    try:
+        # Fit PPML regression model
+        model = smf.glm(formula=formula, data=df_industry, family=sm.families.Poisson()).fit()
+
+        # Extract coefficients
+        beta_0 = model.params.get("Intercept", np.nan)  # Intercept
+        beta_1 = model.params.get("Log_Total_CZ_Employment", np.nan)  # Scaling coefficient
+        beta_2 = model.params.get("Log_Total_CZ_Employment_Squared", np.nan)  # Squared term
+
+        # Store coefficients in dictionary
+        scaling_coefficients[naics_code] = (beta_0, beta_1, beta_2)
+
+    except Exception as e:
+        print(f"Error processing NAICS {naics_code}: {e}")
+
+# Convert coefficients dictionary to DataFrame
+df_scaling = pd.DataFrame.from_dict(scaling_coefficients, orient="index", 
+                                    columns=["Intercept", "Scaling_Coefficient_Beta1", "Log_Total_CZ_Employment_Squared"])
+df_scaling.reset_index(inplace=True)
+df_scaling.rename(columns={"index": "Industry"}, inplace=True)
+
+###############################################################################
+
+df['Industry'] = df['Industry'].astype(str)
+df_scaling['Industry'] = df_scaling['Industry'].astype(str)
+
+df = df.merge(df_scaling, on="Industry", how="left")
+
+###############################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Create an empty dictionary to store results
+scaling_coefficients = {}
+
+# Loop through each industry and run the PPML regression
+for naics_code in df['Industry'].astype(str).unique():
+    df_industry = df[df['Industry'] == naics_code].copy()
+    
+    # Ensure enough data points
+    if len(df_industry) < 10:
+        continue
+    
+    formula = "Jobs ~ Log_Total_CZ_Employment + Log_Total_CZ_Employment_Squared"
+    
+    try:
+        model = smf.glm(formula=formula, data=df_industry, family=sm.families.Poisson()).fit()
+        
+        # Extract coefficients
+        beta_0 = model.params.get("Intercept", np.nan)  # Intercept
+        beta_1 = model.params.get("Log_Total_CZ_Employment", np.nan)  # Scaling coefficient
+        beta_2 = model.params.get("Log_Total_CZ_Employment_Squared", np.nan)  # Squared term
+
+        # Store all coefficients
+        scaling_coefficients[naics_code] = (beta_0, beta_1, beta_2)
+
+    except Exception as e:
+        print(f"Error processing NAICS {naics_code}: {e}")
+
+# Convert to DataFrame
+df = pd.DataFrame.from_dict(scaling_coefficients, orient="index", columns=["Intercept", "Scaling_Coefficient_Beta1", "Log_Total_CZ_Employment_Squared"])
+df.reset_index(inplace=True)
+df.rename(columns={"index": "Industry"}, inplace=True)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Create an empty dictionary to store results
 scaling_coefficients = {}
@@ -217,6 +592,167 @@ def print_top_bottom_scaling(df):
 
 # Run the function on df_cz
 print_top_bottom_scaling(df_cz)
+
+###############################################################################
+
+import geopandas as gpd
+import matplotlib.pyplot as plt
+
+
+# Load the shapefile
+cz_gdf = gpd.read_file("C:/Users/ConnorChristensen/OneDrive - Wyoming Business Council/Documents/Analysis/CommutingZones2020-main/CommutingZones2020-main/Output Data/CommutingZones2020_GIS_files/cz20.shp")
+
+# Display first few rows
+print(cz_gdf.head())
+
+# Plot the commuting zones
+cz_gdf.plot(figsize=(10, 6), edgecolor="black", cmap="viridis")
+plt.title("2020 Commuting Zones")
+plt.show()
+
+###############################################################################
+
+def get_commuting_zone(df, county_name):
+    """
+    Returns the commuting zone (CZ20) for a given county name.
+    
+    Parameters:
+    df (DataFrame): The dataset containing "Area Name" (county names) and "CZ20" (commuting zones).
+    county_name (str): The name of the county to look up.
+    
+    Returns:
+    array or None: The unique commuting zone(s) if found, otherwise None.
+    """
+    result = df[df["Area Name"].str.contains(county_name, case=False, na=False)]
+    return result["CZ20"].unique() if not result.empty else None
+
+
+county_name = "Larimer County, CO"                            #Fort Collins, CO
+larimer = get_commuting_zone(df_merged, county_name)
+print(f"Commuting Zone for {county_name}: {larimer}")
+
+county_name = "Yellowstone County, MT"                            #Billings, MT
+yellowstone = get_commuting_zone(df_merged, county_name)
+print(f"Commuting Zone for {county_name}: {yellowstone}")
+
+county_name = "Gallatin County, MT"                                #Bozeman, MT
+gallatin = get_commuting_zone(df_merged, county_name)
+print(f"Commuting Zone for {county_name}: {gallatin}")
+
+county_name = "Pennington County, SD"                           #Rapid City, SD
+pennington = get_commuting_zone(df_merged, county_name)
+print(f"Commuting Zone for {county_name}: {pennington}")
+
+county_name = "Scotts Bluff County, NE"                        #Scottsbluff, NE
+scottsbluff = get_commuting_zone(df_merged, county_name)
+print(f"Commuting Zone for {county_name}: {scottsbluff}")
+
+county_name = "Bannock County, ID"                               #Pocatello, ID
+bannock = get_commuting_zone(df_merged, county_name)
+print(f"Commuting Zone for {county_name}: {bannock}")
+
+county_name = "Cache County, UT"                                     #Logan, UT
+cache = get_commuting_zone(df_merged, county_name)
+print(f"Commuting Zone for {county_name}: {cache}")
+
+county_name = "Weber County, UT"                                     #Ogden, UT
+weber = get_commuting_zone(df_merged, county_name)
+print(f"Commuting Zone for {county_name}: {weber}")
+
+###############################################################################
+
+target_czs = set()
+
+for cz in [larimer, yellowstone, gallatin, pennington, scottsbluff, bannock, cache, weber]:
+    if cz is not None:
+        target_czs.update(cz)  # Add to set to avoid duplicates
+
+# Convert to a sorted list for readability
+target_czs = sorted(target_czs)
+###############################################################################
+
+df_target_czs = df_cz[df_cz["CZ20"].isin(target_czs)]
+
+###############################################################################
+# Create an empty dictionary to store results
+scaling_coefficients = {}
+
+# Loop through each industry and run the PPML regression
+for naics_code in df_cz['Industry'].astype(str).unique():
+    df_industry = df_cz[df_cz['Industry'] == naics_code].copy()
+    
+    # Ensure enough data points
+    if len(df_industry) < 10:
+        continue
+    
+    formula = "Jobs ~ Log_Total_CZ_Employment + Log_Total_CZ_Employment_Squared"
+    
+    try:
+        model = smf.glm(formula=formula, data=df_industry, family=sm.families.Poisson()).fit()
+        
+        # Extract coefficients
+        beta_0 = model.params.get("Intercept", np.nan)  # Intercept
+        beta_1 = model.params.get("Log_Total_CZ_Employment", np.nan)  # Scaling coefficient
+        beta_2 = model.params.get("Log_Total_CZ_Employment_Squared", np.nan)  # Squared term
+
+        # Store all coefficients
+        scaling_coefficients[naics_code] = (beta_0, beta_1, beta_2)
+
+    except Exception as e:
+        print(f"Error processing NAICS {naics_code}: {e}")
+
+# Convert to DataFrame
+df_scaling = pd.DataFrame.from_dict(scaling_coefficients, orient="index", columns=["Intercept", "Scaling_Coefficient_Beta1", "Log_Total_CZ_Employment_Squared"])
+df_scaling.reset_index(inplace=True)
+df_scaling.rename(columns={"index": "Industry"}, inplace=True)
+
+###############################################################################
+# Drop duplicate columns from df_target_czs before merging
+df_target_czs = df_target_czs.drop(columns=['Scaling_Coefficient_Beta1'], errors='ignore')
+
+# Now merge without duplication issues
+df_target_czs = df_target_czs.merge(df_scaling, on="Industry", how="left")
+
+
+
+
+
+# Ensure scaling coefficients are merged with df_target_czs
+df_target_czs = df_target_czs.merge(df_scaling, on="Industry", how="left")
+
+# Compute expected employment using the scaling model
+df_target_czs['Expected_Jobs'] = np.exp(
+    df_target_czs['Intercept'] + 
+    df_target_czs['Scaling_Coefficient_Beta1'] * df_target_czs['Log_Total_CZ_Employment'] + 
+    df_target_czs['Log_Total_CZ_Employment_Squared'] * df_target_czs['Log_Total_CZ_Employment_Squared']
+)
+
+# Compute employment deviation (actual - expected)
+df_target_czs['Employment_Deviation'] = df_target_czs['Jobs'] - df_target_czs['Expected_Jobs']
+
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
