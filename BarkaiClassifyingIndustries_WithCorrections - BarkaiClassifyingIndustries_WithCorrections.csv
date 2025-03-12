@@ -1,0 +1,1089 @@
+naics,name,baseline_tradable,corrected_tradable
+113110,Timber Tract Operations,tradable,tradable
+113210,Forest Nurseries and Gathering of Forest Products,tradable,tradable
+113310,Logging,tradable,tradable
+114111,Finfish Fishing,tradable,tradable
+114112,Shellfish Fishing,tradable,tradable
+114119,Other Marine Fishing,tradable,tradable
+114210,Hunting and Trapping,tradable,tradable
+115111,Cotton Ginning,tradable,tradable
+115112,"Soil Preparation, Planting, and Cultivating",non-tradable,non-tradable
+115113,"Crop Harvesting, Primarily by Machine",tradable,tradable
+115114,Postharvest Crop Activities (except Cotton Ginning),tradable,tradable
+115115,Farm Labor Contractors and Crew Leaders,tradable,tradable
+115116,Farm Management Services,tradable,tradable
+115210,Support Activities for Animal Production,non-tradable,non-tradable
+115310,Support Activities for Forestry,tradable,tradable
+211111,Crude Petroleum and Natural Gas Extraction,tradable,tradable
+211112,Natural Gas Liquid Extraction,tradable,tradable
+212111,Bituminous Coal and Lignite Surface Mining,tradable,tradable
+212112,Bituminous Coal Underground Mining,tradable,tradable
+212113,Anthracite Mining,tradable,tradable
+212210,Iron Ore Mining,tradable,tradable
+212221,Gold Ore Mining,tradable,tradable
+212222,Silver Ore Mining,tradable,tradable
+212231,Lead Ore and Zinc Ore Mining,tradable,tradable
+212234,Copper Ore and Nickel Ore Mining,tradable,tradable
+212291,Uranium-Radium-Vanadium Ore Mining,tradable,tradable
+212299,All Other Metal Ore Mining,tradable,tradable
+212311,Dimension Stone Mining and Quarrying,tradable,tradable
+212312,Crushed and Broken Limestone Mining and Quarrying,tradable,tradable
+212313,Crushed and Broken Granite Mining and Quarrying,tradable,tradable
+212319,Other Crushed and Broken Stone Mining and Quarrying,tradable,tradable
+212321,Construction Sand and Gravel Mining,non-tradable,non-tradable
+212322,Industrial Sand Mining,tradable,tradable
+212324,Kaolin and Ball Clay Mining,tradable,tradable
+212325,Clay and Ceramic and Refractory Minerals Mining,tradable,tradable
+212391,"Potash, Soda, and Borate Mineral Mining",tradable,tradable
+212392,Phosphate Rock Mining,tradable,tradable
+212393,Other Chemical and Fertilizer Mineral Mining,tradable,tradable
+212399,All Other Nonmetallic Mineral Mining,tradable,tradable
+213111,Drilling Oil and Gas Wells,tradable,tradable
+213112,Support Activities for Oil and Gas Operations,tradable,tradable
+213113,Support Activities for Coal Mining,tradable,tradable
+213114,Support Activities for Metal Mining,tradable,tradable
+213115,Support Activities for Nonmetallic Minerals Mining (except Fuels),tradable,tradable
+221111,Hydroelectric Power Generation,tradable,non-tradable
+221112,Fossil Fuel Electric Power Generation,non-tradable,non-tradable
+221113,Nuclear Electric Power Generation,tradable,non-tradable
+221119,Other Electric Power Generation,tradable,non-tradable
+221121,Electric Bulk Power Transmission and Control,tradable,non-tradable
+221122,Electric Power Distribution,non-tradable,non-tradable
+221210,Natural Gas Distribution,non-tradable,non-tradable
+221310,Water Supply and Irrigation Systems,non-tradable,non-tradable
+221320,Sewage Treatment Facilities,tradable,non-tradable
+221330,Steam and Air-Conditioning Supply,tradable,non-tradable
+236115,New Single-Family Housing Construction (except Operative Builders),non-tradable,non-tradable
+236116,New Multifamily Housing Construction (except Operative Builders),non-tradable,non-tradable
+236117,New Housing Operative Builders,non-tradable,non-tradable
+236118,Residential Remodelers,non-tradable,non-tradable
+236210,Industrial Building Construction,non-tradable,non-tradable
+236220,Commercial and Institutional Building Construction,non-tradable,non-tradable
+237110,Water and Sewer Line and Related Structures Construction,non-tradable,non-tradable
+237120,Oil and Gas Pipeline and Related Structures Construction,non-tradable,non-tradable
+237130,Power and Communication Line and Related Structures Construction,non-tradable,non-tradable
+237210,Land Subdivision,non-tradable,non-tradable
+237310,"Highway, Street, and Bridge Construction",non-tradable,non-tradable
+237990,Other Heavy and Civil Engineering Construction,non-tradable,non-tradable
+238110,Poured Concrete Foundation and Structure Contractors,non-tradable,non-tradable
+238120,Structural Steel and Precast Concrete Contractors,non-tradable,non-tradable
+238130,Framing Contractors,non-tradable,non-tradable
+238140,Masonry Contractors,non-tradable,non-tradable
+238150,Glass and Glazing Contractors,non-tradable,non-tradable
+238160,Roofing Contractors,non-tradable,non-tradable
+238170,Siding Contractors,non-tradable,non-tradable
+238190,"Other Foundation, Structure, and Building Exterior Contractors",non-tradable,non-tradable
+238210,Electrical Contractors and Other Wiring Installation Contractors,non-tradable,non-tradable
+238220,"Plumbing, Heating, and Air-Conditioning Contractors",non-tradable,non-tradable
+238290,Other Building Equipment Contractors,non-tradable,non-tradable
+238310,Drywall and Insulation Contractors,non-tradable,non-tradable
+238320,Painting and Wall Covering Contractors,non-tradable,non-tradable
+238330,Flooring Contractors,non-tradable,non-tradable
+238340,Tile and Terrazzo Contractors,non-tradable,non-tradable
+238350,Finish Carpentry Contractors,non-tradable,non-tradable
+238390,Other Building Finishing Contractors,non-tradable,non-tradable
+238910,Site Preparation Contractors,non-tradable,non-tradable
+238990,All Other Specialty Trade Contractors,non-tradable,non-tradable
+311111,Dog and Cat Food Manufacturing,tradable,tradable
+311119,Other Animal Food Manufacturing,non-tradable,tradable
+311211,Flour Milling,tradable,tradable
+311212,Rice Milling,tradable,tradable
+311213,Malt Manufacturing,tradable,tradable
+311221,Wet Corn Milling,tradable,tradable
+311222,Soybean Processing,tradable,tradable
+311223,Other Oilseed Processing,tradable,tradable
+311225,Fats and Oils Refining and Blending,tradable,tradable
+311230,Breakfast Cereal Manufacturing,tradable,tradable
+311311,Sugarcane Mills,tradable,tradable
+311312,Cane Sugar Refining,tradable,tradable
+311313,Beet Sugar Manufacturing,tradable,tradable
+311320,Chocolate and Confectionery Manufacturing from Cacao Beans,tradable,tradable
+311330,Confectionery Manufacturing from Purchased Chocolate,tradable,tradable
+311340,Nonchocolate Confectionery Manufacturing,tradable,tradable
+311411,"Frozen Fruit, Juice, and Vegetable Manufacturing",tradable,tradable
+311412,Frozen Specialty Food Manufacturing,tradable,tradable
+311421,Fruit and Vegetable Canning,tradable,tradable
+311422,Specialty Canning,tradable,tradable
+311423,Dried and Dehydrated Food Manufacturing,tradable,tradable
+311511,Fluid Milk Manufacturing,tradable,tradable
+311512,Creamery Butter Manufacturing,tradable,tradable
+311513,Cheese Manufacturing,tradable,tradable
+311514,"Dry, Condensed, and Evaporated Dairy Product Manufacturing",tradable,tradable
+311520,Ice Cream and Frozen Dessert Manufacturing,tradable,tradable
+311611,Animal (except Poultry) Slaughtering,non-tradable,non-tradable
+311612,Meat Processed from Carcasses,non-tradable,non-tradable
+311613,Rendering and Meat Byproduct Processing,tradable,tradable
+311615,Poultry Processing,tradable,tradable
+311711,Seafood Canning,tradable,tradable
+311712,Fresh and Frozen Seafood Processing,tradable,tradable
+311811,Retail Bakeries,non-tradable,non-tradable
+311812,Commercial Bakeries,non-tradable,non-tradable
+311813,"Frozen Cakes, Pies, and Other Pastries Manufacturing",tradable,tradable
+311821,Cookie and Cracker Manufacturing,tradable,tradable
+311822,Flour Mixes and Dough Manufacturing from Purchased Flour,tradable,tradable
+311823,Dry Pasta Manufacturing,tradable,tradable
+311830,Tortilla Manufacturing,tradable,tradable
+311911,Roasted Nuts and Peanut Butter Manufacturing,tradable,tradable
+311919,Other Snack Food Manufacturing,tradable,tradable
+311920,Coffee and Tea Manufacturing,tradable,tradable
+311930,Flavoring Syrup and Concentrate Manufacturing,tradable,tradable
+311941,"Mayonnaise, Dressing, and Other Prepared Sauce Manufacturing",tradable,tradable
+311942,Spice and Extract Manufacturing,tradable,tradable
+311991,Perishable Prepared Food Manufacturing,tradable,tradable
+311999,All Other Miscellaneous Food Manufacturing,tradable,tradable
+312111,Soft Drink Manufacturing,tradable,tradable
+312112,Bottled Water Manufacturing,tradable,tradable
+312113,Ice Manufacturing,non-tradable,non-tradable
+312120,Breweries,tradable,tradable
+312130,Wineries,non-tradable,non-tradable
+312140,Distilleries,tradable,tradable
+312210,Tobacco Stemming and Redrying,tradable,tradable
+312221,Cigarette Manufacturing,tradable,tradable
+312229,Other Tobacco Product Manufacturing,tradable,tradable
+313111,Yarn Spinning Mills,tradable,tradable
+313112,"Yarn Texturizing, Throwing, and Twisting Mills",tradable,tradable
+313113,Thread Mills,tradable,tradable
+313210,Broadwoven Fabric Mills,tradable,tradable
+313221,Narrow Fabric Mills,tradable,tradable
+313222,Schiffli Machine Embroidery,tradable,tradable
+313230,Nonwoven Fabric Mills,tradable,tradable
+313241,Weft Knit Fabric Mills,tradable,tradable
+313249,Other Knit Fabric and Lace Mills,tradable,tradable
+313311,Broadwoven Fabric Finishing Mills,tradable,tradable
+313312,Textile and Fabric Finishing (except Broadwoven Fabric) Mills,tradable,tradable
+313320,Fabric Coating Mills,tradable,tradable
+314110,Carpet and Rug Mills,tradable,tradable
+314121,Curtain and Drapery Mills,non-tradable,non-tradable
+314129,Other Household Textile Product Mills,tradable,tradable
+314911,Textile Bag Mills,tradable,tradable
+314912,Canvas and Related Product Mills,non-tradable,non-tradable
+314991,"Rope, Cordage, and Twine Mills",tradable,tradable
+314992,Tire Cord and Tire Fabric Mills,tradable,tradable
+314999,All Other Miscellaneous Textile Product Mills,non-tradable,tradable
+315111,Sheer Hosiery Mills,tradable,tradable
+315119,Other Hosiery and Sock Mills,tradable,tradable
+315191,Outerwear Knitting Mills,tradable,tradable
+315192,Underwear and Nightwear Knitting Mills,tradable,tradable
+315211,Men's and Boys' Cut and Sew Apparel Contractors,tradable,non-tradable
+315212,"Women's, Girls', and Infants' Cut and Sew Apparel Contractors",non-tradable,mixed
+315221,Men's and Boys' Cut and Sew Underwear and Nightwear Manufacturing,tradable,tradable
+315222,"Men's and Boys' Cut and Sew Suit, Coat, and Overcoat Manufacturing",tradable,tradable
+315223,Men's and Boys' Cut and Sew Shirt (except Work Shirt) Manufacturing,tradable,tradable
+315224,"Men's and Boys' Cut and Sew Trouser, Slack, and Jean Manufacturing",tradable,tradable
+315225,Men's and Boys' Cut and Sew Work Clothing Manufacturing,tradable,tradable
+315228,Men's and Boys' Cut and Sew Other Outerwear Manufacturing,tradable,tradable
+315231,"Women's and Girls' Cut and Sew Lingerie, Loungewear, and Nightwear Manufacturing",tradable,tradable
+315232,Women's and Girls' Cut and Sew Blouse and Shirt Manufacturing,tradable,tradable
+315233,Women's and Girls' Cut and Sew Dress Manufacturing,tradable,tradable
+315234,"Women's and Girls' Cut and Sew Suit, Coat, Tailored Jacket, and Skirt Manufacturing",tradable,tradable
+315239,Women's and Girls' Cut and Sew Other Outerwear Manufacturing,tradable,tradable
+315291,Infants' Cut and Sew Apparel Manufacturing,tradable,tradable
+315292,Fur and Leather Apparel Manufacturing,tradable,tradable
+315299,All Other Cut and Sew Apparel Manufacturing,tradable,tradable
+315991,"Hat, Cap, and Millinery Manufacturing",tradable,tradable
+315992,Glove and Mitten Manufacturing,tradable,tradable
+315993,Men's and Boys' Neckwear Manufacturing,tradable,tradable
+315999,Other Apparel Accessories and Other Apparel Manufacturing,tradable,tradable
+316110,Leather and Hide Tanning and Finishing,tradable,tradable
+316211,Rubber and Plastics Footwear Manufacturing,tradable,tradable
+316212,House Slipper Manufacturing,tradable,tradable
+316213,Men's Footwear (except Athletic) Manufacturing,tradable,tradable
+316214,Women's Footwear (except Athletic) Manufacturing,tradable,tradable
+316219,Other Footwear Manufacturing,tradable,tradable
+316991,Luggage Manufacturing,tradable,tradable
+316992,Women's Handbag and Purse Manufacturing,tradable,tradable
+316993,Personal Leather Good (except Women's Handbag and Purse) Manufacturing,tradable,tradable
+316999,All Other Leather Good and Allied Product Manufacturing,tradable,tradable
+321113,Sawmills,non-tradable,non-tradable
+321114,Wood Preservation,tradable,tradable
+321211,Hardwood Veneer and Plywood Manufacturing,tradable,tradable
+321212,Softwood Veneer and Plywood Manufacturing,tradable,tradable
+321213,Engineered Wood Member (except Truss) Manufacturing,tradable,tradable
+321214,Truss Manufacturing,non-tradable,non-tradable
+321219,Reconstituted Wood Product Manufacturing,tradable,tradable
+321911,Wood Window and Door Manufacturing,non-tradable,non-tradable
+321912,"Cut Stock, Resawing Lumber, and Planing",tradable,tradable
+321918,Other Millwork (including Flooring),non-tradable,non-tradable
+321920,Wood Container and Pallet Manufacturing,non-tradable,non-tradable
+321991,Manufactured Home (Mobile Home) Manufacturing,tradable,tradable
+321992,Prefabricated Wood Building Manufacturing,tradable,tradable
+321999,All Other Miscellaneous Wood Product Manufacturing,non-tradable,non-tradable
+322110,Pulp Mills,tradable,tradable
+322121,Paper (except Newsprint) Mills,tradable,tradable
+322122,Newsprint Mills,tradable,tradable
+322130,Paperboard Mills,tradable,tradable
+322211,Corrugated and Solid Fiber Box Manufacturing,non-tradable,non-tradable
+322212,Folding Paperboard Box Manufacturing,tradable,tradable
+322213,Setup Paperboard Box Manufacturing,tradable,tradable
+322214,"Fiber Can, Tube, Drum, and Similar Products Manufacturing",tradable,tradable
+322215,Nonfolding Sanitary Food Container Manufacturing,tradable,tradable
+322221,Coated and Laminated Packaging Paper Manufacturing,tradable,tradable
+322222,Coated and Laminated Paper Manufacturing,tradable,tradable
+322223,Coated Paper Bag and Pouch Manufacturing,tradable,tradable
+322224,Uncoated Paper and Multiwall Bag Manufacturing,tradable,tradable
+322225,Laminated Aluminum Foil Manufacturing for Flexible Packaging Uses,tradable,tradable
+322226,Surface-Coated Paperboard Manufacturing,tradable,tradable
+322231,Die-Cut Paper and Paperboard Office Supplies Manufacturing,tradable,tradable
+322232,Envelope Manufacturing,tradable,tradable
+322233,"Stationery, Tablet, and Related Product Manufacturing",tradable,tradable
+322291,Sanitary Paper Product Manufacturing,tradable,tradable
+322299,All Other Converted Paper Product Manufacturing,tradable,tradable
+323110,Commercial Lithographic Printing,non-tradable,non-tradable
+323111,Commercial Gravure Printing,tradable,tradable
+323112,Commercial Flexographic Printing,tradable,tradable
+323113,Commercial Screen Printing,non-tradable,non-tradable
+323114,Quick Printing,non-tradable,non-tradable
+323115,Digital Printing,non-tradable,non-tradable
+323116,Manifold Business Forms Printing,tradable,tradable
+323117,Books Printing,tradable,tradable
+323118,"Blankbook, Looseleaf Binders, and Devices Manufacturing",tradable,tradable
+323119,Other Commercial Printing,non-tradable,non-tradable
+323121,Tradebinding and Related Work,tradable,tradable
+323122,Prepress Services,tradable,tradable
+324110,Petroleum Refineries,tradable,tradable
+324121,Asphalt Paving Mixture and Block Manufacturing,non-tradable,non-tradable
+324122,Asphalt Shingle and Coating Materials Manufacturing,tradable,tradable
+324191,Petroleum Lubricating Oil and Grease Manufacturing,tradable,tradable
+324199,All Other Petroleum and Coal Products Manufacturing,tradable,tradable
+325110,Petrochemical Manufacturing,tradable,tradable
+325120,Industrial Gas Manufacturing,tradable,tradable
+325131,Inorganic Dye and Pigment Manufacturing,tradable,tradable
+325132,Synthetic Organic Dye and Pigment Manufacturing,tradable,tradable
+325181,Alkalies and Chlorine Manufacturing,tradable,tradable
+325182,Carbon Black Manufacturing,tradable,tradable
+325188,All Other Basic Inorganic Chemical Manufacturing,tradable,tradable
+325191,Gum and Wood Chemical Manufacturing,tradable,tradable
+325192,Cyclic Crude and Intermediate Manufacturing,tradable,tradable
+325193,Ethyl Alcohol Manufacturing,tradable,tradable
+325199,All Other Basic Organic Chemical Manufacturing,tradable,tradable
+325211,Plastics Material and Resin Manufacturing,tradable,tradable
+325212,Synthetic Rubber Manufacturing,tradable,tradable
+325221,Cellulosic Organic Fiber Manufacturing,tradable,tradable
+325222,Noncellulosic Organic Fiber Manufacturing,tradable,tradable
+325311,Nitrogenous Fertilizer Manufacturing,tradable,tradable
+325312,Phosphatic Fertilizer Manufacturing,tradable,tradable
+325314,Fertilizer (Mixing Only) Manufacturing,tradable,tradable
+325320,Pesticide and Other Agricultural Chemical Manufacturing,tradable,tradable
+325411,Medicinal and Botanical Manufacturing,tradable,tradable
+325412,Pharmaceutical Preparation Manufacturing,tradable,tradable
+325413,In-Vitro Diagnostic Substance Manufacturing,tradable,tradable
+325414,Biological Product (except Diagnostic) Manufacturing,tradable,tradable
+325510,Paint and Coating Manufacturing,non-tradable,non-tradable
+325520,Adhesive Manufacturing,tradable,tradable
+325611,Soap and Other Detergent Manufacturing,tradable,tradable
+325612,Polish and Other Sanitation Good Manufacturing,tradable,tradable
+325613,Surface Active Agent Manufacturing,tradable,tradable
+325620,Toilet Preparation Manufacturing,tradable,tradable
+325910,Printing Ink Manufacturing,tradable,tradable
+325920,Explosives Manufacturing,tradable,tradable
+325991,Custom Compounding of Purchased Resins,tradable,tradable
+325992,"Photographic Film, Paper, Plate, and Chemical Manufacturing",tradable,tradable
+325998,All Other Miscellaneous Chemical Product and Preparation Manufacturing,non-tradable,tradable
+326111,Plastics Bag and Pouch Manufacturing,tradable,tradable
+326112,Plastics Packaging Film and Sheet (including Laminated) Manufacturing,tradable,tradable
+326113,Unlaminated Plastics Film and Sheet (except Packaging) Manufacturing,tradable,tradable
+326121,Unlaminated Plastics Profile Shape Manufacturing,tradable,tradable
+326122,Plastics Pipe and Pipe Fitting Manufacturing,tradable,tradable
+326130,"Laminated Plastics Plate, Sheet (except Packaging), and Shape Manufacturing",tradable,tradable
+326140,Polystyrene Foam Product Manufacturing,tradable,tradable
+326150,Urethane and Other Foam Product (except Polystyrene) Manufacturing,tradable,tradable
+326160,Plastics Bottle Manufacturing,tradable,tradable
+326191,Plastics Plumbing Fixture Manufacturing,tradable,tradable
+326192,Resilient Floor Covering Manufacturing,tradable,tradable
+326199,All Other Plastics Product Manufacturing,non-tradable,tradable
+326211,Tire Manufacturing (except Retreading),tradable,tradable
+326212,Tire Retreading,tradable,tradable
+326220,Rubber and Plastics Hoses and Belting Manufacturing,tradable,tradable
+326291,Rubber Product Manufacturing for Mechanical Use,tradable,tradable
+326299,All Other Rubber Product Manufacturing,tradable,tradable
+327111,Vitreous China Plumbing Fixture and China and Earthenware Bathroom Accessories Manufacturing,tradable,tradable
+327112,"Vitreous China, Fine Earthenware, and Other Pottery Product Manufacturing",tradable,tradable
+327113,Porcelain Electrical Supply Manufacturing,tradable,tradable
+327121,Brick and Structural Clay Tile Manufacturing,tradable,tradable
+327122,Ceramic Wall and Floor Tile Manufacturing,tradable,tradable
+327123,Other Structural Clay Product Manufacturing,tradable,tradable
+327124,Clay Refractory Manufacturing,tradable,tradable
+327125,Nonclay Refractory Manufacturing,tradable,tradable
+327211,Flat Glass Manufacturing,tradable,tradable
+327212,Other Pressed and Blown Glass and Glassware Manufacturing,tradable,tradable
+327213,Glass Container Manufacturing,tradable,tradable
+327215,Glass Product Manufacturing Made of Purchased Glass,non-tradable,non-tradable
+327310,Cement Manufacturing,tradable,tradable
+327320,Ready-Mix Concrete Manufacturing,non-tradable,non-tradable
+327331,Concrete Block and Brick Manufacturing,non-tradable,non-tradable
+327332,Concrete Pipe Manufacturing,tradable,non-tradable
+327390,Other Concrete Product Manufacturing,non-tradable,non-tradable
+327410,Lime Manufacturing,tradable,tradable
+327420,Gypsum Product Manufacturing,tradable,tradable
+327910,Abrasive Product Manufacturing,tradable,tradable
+327991,Cut Stone and Stone Product Manufacturing,non-tradable,non-tradable
+327992,Ground or Treated Mineral and Earth Manufacturing,tradable,tradable
+327993,Mineral Wool Manufacturing,tradable,tradable
+327999,All Other Miscellaneous Nonmetallic Mineral Product Manufacturing,tradable,tradable
+331111,Iron and Steel Mills,tradable,tradable
+331112,Electrometallurgical Ferroalloy Product Manufacturing,tradable,tradable
+331210,Iron and Steel Pipe and Tube Manufacturing from Purchased Steel,tradable,tradable
+331221,Rolled Steel Shape Manufacturing,tradable,tradable
+331222,Steel Wire Drawing,tradable,tradable
+331311,Alumina Refining,tradable,tradable
+331312,Primary Aluminum Production,tradable,tradable
+331314,Secondary Smelting and Alloying of Aluminum,tradable,tradable
+331315," Aluminum Sheet, Plate, and Foil Manufacturing",tradable,tradable
+331316,Aluminum Extruded Product Manufacturing,tradable,tradable
+331319,Other Aluminum Rolling and Drawing,tradable,tradable
+331411,Primary Smelting and Refining of Copper,tradable,tradable
+331419,Primary Smelting and Refining of Nonferrous Metal (except Copper and Aluminum),tradable,tradable
+331421,"Copper Rolling, Drawing, and Extruding",tradable,tradable
+331422,Copper Wire (except Mechanical) Drawing,tradable,tradable
+331423,"Secondary Smelting, Refining, and Alloying of Copper",tradable,tradable
+331491,"Nonferrous Metal (except Copper and Aluminum) Rolling, Drawing, and Extruding",tradable,tradable
+331492,"Secondary Smelting, Refining, and Alloying of Nonferrous Metal (except Copper and Aluminum)",tradable,tradable
+331511,Iron Foundries,tradable,tradable
+331512,Steel Investment Foundries,tradable,tradable
+331513,Steel Foundries (except Investment),tradable,tradable
+331521,Aluminum Die-Casting Foundries,tradable,tradable
+331522,Nonferrous (except Aluminum) Die-Casting Foundries,tradable,tradable
+331524,Aluminum Foundries (except Die-Casting),tradable,tradable
+331525,Copper Foundries (except Die-Casting),tradable,tradable
+331528,Other Nonferrous Foundries (except Die-Casting),tradable,tradable
+332111,Iron and Steel Forging,tradable,tradable
+332112,Nonferrous Forging,tradable,tradable
+332114,Custom Roll Forming,tradable,tradable
+332115,Crown and Closure Manufacturing,tradable,tradable
+332116,Metal Stamping,tradable,tradable
+332117,Powder Metallurgy Part Manufacturing,tradable,tradable
+332211,Cutlery and Flatware (except Precious) Manufacturing,tradable,tradable
+332212,Hand and Edge Tool Manufacturing,tradable,tradable
+332213,Saw Blade and Handsaw Manufacturing,tradable,tradable
+332214,"Kitchen Utensil, Pot, and Pan Manufacturing",tradable,tradable
+332311,Prefabricated Metal Building and Component Manufacturing,non-tradable,non-tradable
+332312,Fabricated Structural Metal Manufacturing,non-tradable,non-tradable
+332313,Plate Work Manufacturing,non-tradable,non-tradable
+332321,Metal Window and Door Manufacturing,non-tradable,non-tradable
+332322,Sheet Metal Work Manufacturing,non-tradable,non-tradable
+332323,Ornamental and Architectural Metal Work Manufacturing,non-tradable,non-tradable
+332410,Power Boiler and Heat Exchanger Manufacturing,tradable,tradable
+332420,Metal Tank (Heavy Gauge) Manufacturing,tradable,tradable
+332431,Metal Can Manufacturing,tradable,tradable
+332439,Other Metal Container Manufacturing,tradable,tradable
+332510,Hardware Manufacturing,tradable,tradable
+332611,Spring (Heavy Gauge) Manufacturing,tradable,tradable
+332612,Spring (Light Gauge) Manufacturing,tradable,tradable
+332618,Other Fabricated Wire Product Manufacturing,tradable,tradable
+332710,Machine Shops,non-tradable,non-tradable
+332721,Precision Turned Product Manufacturing,non-tradable,non-tradable
+332722,"Bolt, Nut, Screw, Rivet, and Washer Manufacturing",tradable,tradable
+332811,Metal Heat Treating,tradable,tradable
+332812,"Metal Coating, Engraving (except Jewelry and Silverware), and Allied Services to Manufacturers",non-tradable,non-tradable
+332813,"Electroplating, Plating, Polishing, Anodizing, and Coloring",non-tradable,non-tradable
+332911,Industrial Valve Manufacturing,tradable,tradable
+332912,Fluid Power Valve and Hose Fitting Manufacturing,tradable,tradable
+332913,Plumbing Fixture Fitting and Trim Manufacturing,tradable,tradable
+332919,Other Metal Valve and Pipe Fitting Manufacturing,tradable,tradable
+332991,Ball and Roller Bearing Manufacturing,tradable,tradable
+332992,Small Arms Ammunition Manufacturing,tradable,tradable
+332993,Ammunition (except Small Arms) Manufacturing,tradable,tradable
+332994,Small Arms Manufacturing,tradable,tradable
+332995,Other Ordnance and Accessories Manufacturing,tradable,tradable
+332996,Fabricated Pipe and Pipe Fitting Manufacturing,tradable,tradable
+332997,Industrial Pattern Manufacturing,tradable,tradable
+332998,Enameled Iron and Metal Sanitary Ware Manufacturing,tradable,tradable
+332999,All Other Miscellaneous Fabricated Metal Product Manufacturing,non-tradable,tradable
+333111,Farm Machinery and Equipment Manufacturing,tradable,tradable
+333112,Lawn and Garden Tractor and Home Lawn and Garden Equipment Manufacturing,tradable,tradable
+333120,Construction Machinery Manufacturing,tradable,tradable
+333131,Mining Machinery and Equipment Manufacturing,tradable,tradable
+333132,Oil and Gas Field Machinery and Equipment Manufacturing,tradable,tradable
+333210,Sawmill and Woodworking Machinery Manufacturing,tradable,tradable
+333220,Plastics and Rubber Industry Machinery Manufacturing,tradable,tradable
+333291,Paper Industry Machinery Manufacturing,tradable,tradable
+333292,Textile Machinery Manufacturing,tradable,tradable
+333293,Printing Machinery and Equipment Manufacturing,tradable,tradable
+333294,Food Product Machinery Manufacturing,tradable,tradable
+333295,Semiconductor Machinery Manufacturing,tradable,tradable
+333298,All Other Industrial Machinery Manufacturing,non-tradable,tradable
+333311,Automatic Vending Machine Manufacturing,tradable,tradable
+333312,"Commercial Laundry, Drycleaning, and Pressing Machine Manufacturing",tradable,tradable
+333313,Office Machinery Manufacturing,tradable,tradable
+333314,Optical Instrument and Lens Manufacturing,tradable,tradable
+333315,Photographic and Photocopying Equipment Manufacturing,tradable,tradable
+333319,Other Commercial and Service Industry Machinery Manufacturing,non-tradable,tradable
+333411,Air Purification Equipment Manufacturing,tradable,tradable
+333412,Industrial and Commercial Fan and Blower Manufacturing,tradable,tradable
+333414,Heating Equipment (except Warm Air Furnaces) Manufacturing,tradable,tradable
+333415,Air-Conditioning and Warm Air Heating Equipment and Commercial and Industrial Refrigeration Equipment Manufacturing,non-tradable,tradable
+333511,Industrial Mold Manufacturing,tradable,tradable
+333512,Machine Tool (Metal Cutting Types) Manufacturing,tradable,tradable
+333513,Machine Tool (Metal Forming Types) Manufacturing,tradable,tradable
+333514,"Special Die and Tool, Die Set, Jig, and Fixture Manufacturing",non-tradable,tradable
+333515,Cutting Tool and Machine Tool Accessory Manufacturing,tradable,tradable
+333516,Rolling Mill Machinery and Equipment Manufacturing,tradable,tradable
+333518,Other Metalworking Machinery Manufacturing,tradable,tradable
+333611,Turbine and Turbine Generator Set Units Manufacturing,tradable,tradable
+333612,"Speed Changer, Industrial High-Speed Drive, and Gear Manufacturing",tradable,tradable
+333613,Mechanical Power Transmission Equipment Manufacturing,tradable,tradable
+333618,Other Engine Equipment Manufacturing,tradable,tradable
+333911,Pump and Pumping Equipment Manufacturing,tradable,tradable
+333912,Air and Gas Compressor Manufacturing,tradable,tradable
+333913,Measuring and Dispensing Pump Manufacturing,tradable,tradable
+333921,Elevator and Moving Stairway Manufacturing,tradable,tradable
+333922,Conveyor and Conveying Equipment Manufacturing,tradable,tradable
+333923,"Overhead Traveling Crane, Hoist, and Monorail System Manufacturing",tradable,tradable
+333924," Industrial Truck, Tractor, Trailer, and Stacker Machinery Manufacturing",tradable,tradable
+333991,Power-Driven Handtool Manufacturing,tradable,tradable
+333992,Welding and Soldering Equipment Manufacturing,tradable,tradable
+333993,Packaging Machinery Manufacturing,tradable,tradable
+333994,Industrial Process Furnace and Oven Manufacturing,tradable,tradable
+333995,Fluid Power Cylinder and Actuator Manufacturing,tradable,tradable
+333996,Fluid Power Pump and Motor Manufacturing,tradable,tradable
+333997,Scale and Balance Manufacturing,tradable,tradable
+333999,All Other Miscellaneous General Purpose Machinery Manufacturing,non-tradable,tradable
+334111,Electronic Computer Manufacturing,tradable,tradable
+334112,Computer Storage Device Manufacturing,tradable,tradable
+334113,Computer Terminal Manufacturing,tradable,tradable
+334119,Other Computer Peripheral Equipment Manufacturing,tradable,tradable
+334210,Telephone Apparatus Manufacturing,tradable,tradable
+334220,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,tradable,tradable
+334290,Other Communications Equipment Manufacturing,tradable,tradable
+334310,Audio and Video Equipment Manufacturing,tradable,tradable
+334411,Electron Tube Manufacturing,tradable,tradable
+334412,Bare Printed Circuit Board Manufacturing,tradable,tradable
+334413,Semiconductor and Related Device Manufacturing,tradable,tradable
+334414,Electronic Capacitor Manufacturing,tradable,tradable
+334415,Electronic Resistor Manufacturing,tradable,tradable
+334416,"Electronic Coil, Transformer, and Other Inductor Manufacturing",tradable,tradable
+334417,Electronic Connector Manufacturing,tradable,tradable
+334418,Printed Circuit Assembly (Electronic Assembly) Manufacturing,tradable,tradable
+334419,Other Electronic Component Manufacturing,tradable,tradable
+334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,tradable,tradable
+334511,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing",tradable,tradable
+334512,"Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use",tradable,tradable
+334513," Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables",tradable,tradable
+334514,Totalizing Fluid Meter and Counting Device Manufacturing,tradable,tradable
+334515,Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals,tradable,tradable
+334516,Analytical Laboratory Instrument Manufacturing,tradable,tradable
+334517,Irradiation Apparatus Manufacturing,tradable,tradable
+334518,"Watch, Clock, and Part Manufacturing",tradable,tradable
+334519,Other Measuring and Controlling Device Manufacturing,tradable,tradable
+334611,Software Reproducing,tradable,tradable
+334612,"Prerecorded Compact Disc (except Software), Tape, and Record Reproducing",tradable,tradable
+334613,Magnetic and Optical Recording Media Manufacturing,tradable,tradable
+335110,Electric Lamp Bulb and Part Manufacturing,tradable,tradable
+335121,Residential Electric Lighting Fixture Manufacturing,tradable,tradable
+335122,"Commercial, Industrial, and Institutional Electric Lighting Fixture Manufacturing",tradable,tradable
+335129,Other Lighting Equipment Manufacturing,tradable,tradable
+335211,Electric Housewares and Household Fan Manufacturing,tradable,tradable
+335212,Household Vacuum Cleaner Manufacturing,tradable,tradable
+335221,Household Cooking Appliance Manufacturing,tradable,tradable
+335222,Household Refrigerator and Home Freezer Manufacturing,tradable,tradable
+335224,Household Laundry Equipment Manufacturing,tradable,tradable
+335228,Other Major Household Appliance Manufacturing,tradable,tradable
+335311,"Power, Distribution, and Specialty Transformer Manufacturing",tradable,tradable
+335312,Motor and Generator Manufacturing,tradable,tradable
+335313,Switchgear and Switchboard Apparatus Manufacturing,tradable,tradable
+335314,Relay and Industrial Control Manufacturing,tradable,tradable
+335911,Storage Battery Manufacturing,tradable,tradable
+335912,Primary Battery Manufacturing,tradable,tradable
+335921,Fiber Optic Cable Manufacturing,tradable,tradable
+335929,Other Communication and Energy Wire Manufacturing,tradable,tradable
+335931,Current-Carrying Wiring Device Manufacturing,tradable,tradable
+335932,Noncurrent-Carrying Wiring Device Manufacturing,tradable,tradable
+335991,Carbon and Graphite Product Manufacturing,tradable,tradable
+335999,All Other Miscellaneous Electrical Equipment and Component Manufacturing,tradable,tradable
+336111,Automobile Manufacturing,tradable,tradable
+336112,Light Truck and Utility Vehicle Manufacturing,tradable,tradable
+336120,Heavy Duty Truck Manufacturing,tradable,tradable
+336211,Motor Vehicle Body Manufacturing,tradable,tradable
+336212,Truck Trailer Manufacturing,tradable,tradable
+336213,Motor Home Manufacturing,tradable,tradable
+336214,Travel Trailer and Camper Manufacturing,tradable,tradable
+336311,"Carburetor, Piston, Piston Ring, and Valve Manufacturing",tradable,tradable
+336312,Gasoline Engine and Engine Parts Manufacturing,tradable,tradable
+336321,Vehicular Lighting Equipment Manufacturing,tradable,tradable
+336322,Other Motor Vehicle Electrical and Electronic Equipment Manufacturing,tradable,tradable
+336330,Motor Vehicle Steering and Suspension Components (except Spring) Manufacturing,tradable,tradable
+336340,Motor Vehicle Brake System Manufacturing,tradable,tradable
+336350,Motor Vehicle Transmission and Power Train Parts Manufacturing,tradable,tradable
+336360,Motor Vehicle Seating and Interior Trim Manufacturing,tradable,tradable
+336370,Motor Vehicle Metal Stamping,tradable,tradable
+336391,Motor Vehicle Air-Conditioning Manufacturing,tradable,tradable
+336399,All Other Motor Vehicle Parts Manufacturing,non-tradable,tradable
+336411,Aircraft Manufacturing,tradable,tradable
+336412,Aircraft Engine and Engine Parts Manufacturing,tradable,tradable
+336413,Other Aircraft Parts and Auxiliary Equipment Manufacturing,tradable,tradable
+336414,Guided Missile and Space Vehicle Manufacturing,tradable,tradable
+336415,Guided Missile and Space Vehicle Propulsion Unit and Propulsion Unit Parts Manufacturing,tradable,tradable
+336419,Other Guided Missile and Space Vehicle Parts and Auxiliary Equipment Manufacturing,tradable,tradable
+336510,Railroad Rolling Stock Manufacturing,tradable,tradable
+336611,Ship Building and Repairing,tradable,tradable
+336612,Boat Building,tradable,tradable
+336991,"Motorcycle, Bicycle, and Parts Manufacturing",tradable,tradable
+336992,"Military Armored Vehicle, Tank, and Tank Component Manufacturing",tradable,tradable
+336999,All Other Transportation Equipment Manufacturing,tradable,tradable
+337110,Wood Kitchen Cabinet and Countertop Manufacturing,non-tradable,non-tradable
+337121,Upholstered Household Furniture Manufacturing,tradable,tradable
+337122,Nonupholstered Wood Household Furniture Manufacturing,non-tradable,non-tradable
+337124,Metal Household Furniture Manufacturing,tradable,tradable
+337125,Household Furniture (except Wood and Metal) Manufacturing,tradable,tradable
+337127,Institutional Furniture Manufacturing,tradable,tradable
+337129,"Wood Television, Radio, and Sewing Machine Cabinet Manufacturing",tradable,tradable
+337211,Wood Office Furniture Manufacturing,tradable,tradable
+337212,Custom Architectural Woodwork and Millwork Manufacturing,non-tradable,non-tradable
+337214,Office Furniture (except Wood) Manufacturing,tradable,tradable
+337215,"Showcase, Partition, Shelving, and Locker Manufacturing",tradable,tradable
+337910,Mattress Manufacturing,tradable,tradable
+337920,Blind and Shade Manufacturing,tradable,tradable
+339112,Surgical and Medical Instrument Manufacturing,tradable,tradable
+339113,Surgical Appliance and Supplies Manufacturing,non-tradable,tradable
+339114,Dental Equipment and Supplies Manufacturing,tradable,tradable
+339115,Ophthalmic Goods Manufacturing,tradable,tradable
+339116,Dental Laboratories,non-tradable,non-tradable
+339911,Jewelry (except Costume) Manufacturing,tradable,tradable
+339912,Silverware and Hollowware Manufacturing,tradable,tradable
+339913,Jewelers' Material and Lapidary Work Manufacturing,tradable,tradable
+339914,Costume Jewelry and Novelty Manufacturing,tradable,tradable
+339920,Sporting and Athletic Goods Manufacturing,non-tradable,tradable
+339931,Doll and Stuffed Toy Manufacturing,tradable,tradable
+339932,"Game, Toy, and Children's Vehicle Manufacturing",tradable,tradable
+339941,Pen and Mechanical Pencil Manufacturing,tradable,tradable
+339942,Lead Pencil and Art Good Manufacturing,tradable,tradable
+339943,Marking Device Manufacturing,tradable,tradable
+339944,Carbon Paper and Inked Ribbon Manufacturing,tradable,tradable
+339950,Sign Manufacturing,non-tradable,non-tradable
+339991,"Gasket, Packing, and Sealing Device Manufacturing",tradable,tradable
+339992,Musical Instrument Manufacturing,tradable,tradable
+339993,"Fastener, Button, Needle, and Pin Manufacturing",tradable,tradable
+339994,"Broom, Brush, and Mop Manufacturing",tradable,tradable
+339995,Burial Casket Manufacturing,tradable,tradable
+339999,All Other Miscellaneous Manufacturing,non-tradable,tradable
+423110,Automobile and Other Motor Vehicle Merchant Wholesalers,non-tradable,non-tradable
+423120,Motor Vehicle Supplies and New Parts Merchant Wholesalers,non-tradable,non-tradable
+423130,Tire and Tube Merchant Wholesalers,non-tradable,non-tradable
+423140,Motor Vehicle Parts (Used) Merchant Wholesalers,non-tradable,non-tradable
+423210,Furniture Merchant Wholesalers,non-tradable,non-tradable
+423220,Home Furnishing Merchant Wholesalers,non-tradable,non-tradable
+423310,"Lumber, Plywood, Millwork, and Wood Panel Merchant Wholesalers",non-tradable,non-tradable
+423320,"Brick, Stone, and Related Construction Material Merchant Wholesalers",non-tradable,non-tradable
+423330,"Roofing, Siding, and Insulation Material Merchant Wholesalers",non-tradable,non-tradable
+423390,Other Construction Material Merchant Wholesalers,non-tradable,non-tradable
+423410,Photographic Equipment and Supplies Merchant Wholesalers,tradable,non-tradable
+423420,Office Equipment Merchant Wholesalers,non-tradable,non-tradable
+423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers,non-tradable,non-tradable
+423440,Other Commercial Equipment Merchant Wholesalers,non-tradable,non-tradable
+423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",non-tradable,non-tradable
+423460,Ophthalmic Goods Merchant Wholesalers,tradable,tradable
+423490,Other Professional Equipment and Supplies Merchant Wholesalers,non-tradable,non-tradable
+423510,Metal Service Centers and Other Metal Merchant Wholesalers,non-tradable,non-tradable
+423520,Coal and Other Mineral and Ore Merchant Wholesalers,tradable,tradable
+423610,"Electrical Apparatus and Equipment, Wiring Supplies, and Related Equipment Merchant  Wholesalers",non-tradable,non-tradable
+423620,"Electrical and Electronic Appliance, Television, and Radio Set Merchant Wholesalers",non-tradable,non-tradable
+423690,Other Electronic Parts and Equipment Merchant Wholesalers,non-tradable,non-tradable
+423710,Hardware Merchant Wholesalers,non-tradable,non-tradable
+423720,Plumbing and Heating Equipment and Supplies (Hydronics) Merchant Wholesalers,non-tradable,non-tradable
+423730,Warm Air Heating and Air-Conditioning Equipment and Supplies Merchant Wholesalers,non-tradable,non-tradable
+423740,Refrigeration Equipment and Supplies Merchant Wholesalers,non-tradable,non-tradable
+423810,Construction and Mining (except Oil Well) Machinery and Equipment Merchant Wholesalers,non-tradable,non-tradable
+423820,Farm and Garden Machinery and Equipment Merchant Wholesalers,non-tradable,non-tradable
+423830,Industrial Machinery and Equipment Merchant Wholesalers,non-tradable,non-tradable
+423840,Industrial Supplies Merchant Wholesalers,non-tradable,non-tradable
+423850,Service Establishment Equipment and Supplies Merchant Wholesalers,non-tradable,non-tradable
+423860,Transportation Equipment and Supplies (except Motor Vehicle) Merchant Wholesalers,non-tradable,non-tradable
+423910,Sporting and Recreational Goods and Supplies Merchant Wholesalers,non-tradable,non-tradable
+423920,Toy and Hobby Goods and Supplies Merchant Wholesalers,non-tradable,non-tradable
+423930,Recyclable Material Merchant Wholesalers,non-tradable,non-tradable
+423940,"Jewelry, Watch, Precious Stone, and Precious Metal Merchant Wholesalers",non-tradable,mixed
+423990,Other Miscellaneous Durable Goods Merchant Wholesalers,non-tradable,non-tradable
+424110,Printing and Writing Paper Merchant Wholesalers,tradable,tradable
+424120,Stationery and Office Supplies Merchant Wholesalers,non-tradable,non-tradable
+424130,Industrial and Personal Service Paper Merchant Wholesalers,non-tradable,non-tradable
+424210,Drugs and Druggists' Sundries Merchant Wholesalers,non-tradable,non-tradable
+424310,"Piece Goods, Notions, and Other Dry Goods Merchant Wholesalers",non-tradable,non-tradable
+424320,Men's and Boys' Clothing and Furnishings Merchant Wholesalers,non-tradable,non-tradable
+424330,"Women's, Children's, and Infants' Clothing and Accessories Merchant Wholesalers",non-tradable,mixed
+424340,Footwear Merchant Wholesalers,tradable,non-tradable
+424410,General Line Grocery Merchant Wholesalers,non-tradable,non-tradable
+424420,Packaged Frozen Food Merchant Wholesalers,non-tradable,non-tradable
+424430,Dairy Product (except Dried or Canned) Merchant Wholesalers,non-tradable,non-tradable
+424440,Poultry and Poultry Product Merchant Wholesalers,tradable,non-tradable
+424450,Confectionery Merchant Wholesalers,non-tradable,non-tradable
+424460,Fish and Seafood Merchant Wholesalers,tradable,non-tradable
+424470,Meat and Meat Product Merchant Wholesalers,non-tradable,non-tradable
+424480,Fresh Fruit and Vegetable Merchant Wholesalers,non-tradable,non-tradable
+424490,Other Grocery and Related Products Merchant Wholesalers,non-tradable,non-tradable
+424510,Grain and Field Bean Merchant Wholesalers,non-tradable,non-tradable
+424520,Livestock Merchant Wholesalers,tradable,tradable
+424590,Other Farm Product Raw Material Merchant Wholesalers,tradable,tradable
+424610,Plastics Materials and Basic Forms and Shapes Merchant Wholesalers,non-tradable,non-tradable
+424690,Other Chemical and Allied Products Merchant Wholesalers,non-tradable,non-tradable
+424710,Petroleum Bulk Stations and Terminals,non-tradable,non-tradable
+424720,Petroleum and Petroleum Products Merchant Wholesalers (except Bulk Stations and Terminals),non-tradable,non-tradable
+424810,Beer and Ale Merchant Wholesalers,non-tradable,non-tradable
+424820,Wine and Distilled Alcoholic Beverage Merchant Wholesalers,tradable,non-tradable
+424910,Farm Supplies Merchant Wholesalers,non-tradable,non-tradable
+424920,"Book, Periodical, and Newspaper Merchant Wholesalers",non-tradable,non-tradable
+424930,"Flower, Nursery Stock, and Florists' Supplies Merchant Wholesalers",non-tradable,non-tradable
+424940,Tobacco and Tobacco Product Merchant Wholesalers,non-tradable,non-tradable
+424950,"Paint, Varnish, and Supplies Merchant Wholesalers",non-tradable,non-tradable
+424990,Other Miscellaneous Nondurable Goods Merchant Wholesalers,non-tradable,non-tradable
+425110,Business to Business Electronic Markets,tradable,tradable
+425120,Wholesale Trade Agents and Brokers,non-tradable,non-tradable
+441110,New Car Dealers,non-tradable,non-tradable
+441120,Used Car Dealers,non-tradable,non-tradable
+441210,Recreational Vehicle Dealers,non-tradable,non-tradable
+441221,"Motorcycle, ATV, and Personal Watercraft Dealers",non-tradable,non-tradable
+441222,Boat Dealers,non-tradable,non-tradable
+441229,All Other Motor Vehicle Dealers,non-tradable,non-tradable
+441310,Automotive Parts and Accessories Stores,non-tradable,non-tradable
+441320,Tire Dealers,non-tradable,non-tradable
+442110,Furniture Stores,non-tradable,non-tradable
+442210,Floor Covering Stores,non-tradable,non-tradable
+442291,Window Treatment Stores,non-tradable,non-tradable
+442299,All Other Home Furnishings Stores,non-tradable,non-tradable
+443111,Household Appliance Stores,non-tradable,non-tradable
+443112,"Radio, Television, and Other Electronics Stores",non-tradable,non-tradable
+443120,Computer and Software Stores,non-tradable,non-tradable
+443130,Camera and Photographic Supplies Stores,non-tradable,non-tradable
+444110,Home Centers,non-tradable,non-tradable
+444120,Paint and Wallpaper Stores,non-tradable,non-tradable
+444130,Hardware Stores,non-tradable,non-tradable
+444190,Other Building Material Dealers,non-tradable,non-tradable
+444210,Outdoor Power Equipment Stores,non-tradable,non-tradable
+444220,"Nursery, Garden Center, and Farm Supply Stores",non-tradable,non-tradable
+445110,Supermarkets and Other Grocery (except Convenience) Stores,non-tradable,non-tradable
+445120,Convenience Stores,non-tradable,non-tradable
+445210,Meat Markets,non-tradable,non-tradable
+445220,Fish and Seafood Markets,tradable,non-tradable
+445230,Fruit and Vegetable Markets,non-tradable,non-tradable
+445291,Baked Goods Stores,non-tradable,non-tradable
+445292,Confectionery and Nut Stores,non-tradable,non-tradable
+445299,All Other Specialty Food Stores,non-tradable,non-tradable
+445310,"Beer, Wine, and Liquor Stores",non-tradable,non-tradable
+446110,Pharmacies and Drug Stores,non-tradable,non-tradable
+446120,"Cosmetics, Beauty Supplies, and Perfume Stores",non-tradable,non-tradable
+446130,Optical Goods Stores,non-tradable,non-tradable
+446191,Food (Health) Supplement Stores,non-tradable,non-tradable
+446199,All Other Health and Personal Care Stores,non-tradable,non-tradable
+447110,Gasoline Stations with Convenience Stores,non-tradable,non-tradable
+447190,Other Gasoline Stations,non-tradable,non-tradable
+448110,Men's Clothing Stores,non-tradable,non-tradable
+448120,Women's Clothing Stores,non-tradable,non-tradable
+448130,Children's and Infants' Clothing Stores,non-tradable,non-tradable
+448140,Family Clothing Stores,non-tradable,non-tradable
+448150,Clothing Accessories Stores,non-tradable,non-tradable
+448190,Other Clothing Stores,non-tradable,non-tradable
+448210,Shoe Stores,non-tradable,non-tradable
+448310,Jewelry Stores,non-tradable,non-tradable
+448320,Luggage and Leather Goods Stores,tradable,non-tradable
+451110,Sporting Goods Stores,non-tradable,non-tradable
+451120,"Hobby, Toy, and Game Stores",non-tradable,non-tradable
+451130,"Sewing, Needlework, and Piece Goods Stores",non-tradable,non-tradable
+451140,Musical Instrument and Supplies Stores,non-tradable,non-tradable
+451211,Book Stores,non-tradable,non-tradable
+451212,News Dealers and Newsstands,tradable,non-tradable
+451220,"Prerecorded Tape, Compact Disc, and Record Stores",non-tradable,non-tradable
+452111,Department Stores (except Discount Department Stores),non-tradable,non-tradable
+452112,Discount Department Stores,non-tradable,non-tradable
+452910,Warehouse Clubs and Supercenters,non-tradable,non-tradable
+452990,All Other General Merchandise Stores,non-tradable,non-tradable
+453110,Florists,non-tradable,non-tradable
+453210,Office Supplies and Stationery Stores,non-tradable,non-tradable
+453220,"Gift, Novelty, and Souvenir Stores",non-tradable,non-tradable
+453310,Used Merchandise Stores,non-tradable,non-tradable
+453910,Pet and Pet Supplies Stores,non-tradable,non-tradable
+453920,Art Dealers,non-tradable,non-tradable
+453930,Manufactured (Mobile) Home Dealers,non-tradable,non-tradable
+453991,Tobacco Stores,non-tradable,non-tradable
+453998,All Other Miscellaneous Store Retailers (except Tobacco Stores),non-tradable,non-tradable
+454111,Electronic Shopping,non-tradable,tradable
+454112,Electronic Auctions,tradable,tradable
+454113,Mail-Order Houses,non-tradable,non-tradable
+454210,Vending Machine Operators,non-tradable,non-tradable
+454311,Heating Oil Dealers,tradable,non-tradable
+454312,Liquefied Petroleum Gas (Bottled Gas) Dealers,non-tradable,non-tradable
+454319,Other Fuel Dealers,tradable,non-tradable
+454390,Other Direct Selling Establishments,non-tradable,non-tradable
+481111,Scheduled Passenger Air Transportation,non-tradable,non-tradable
+481112,Scheduled Freight Air Transportation,tradable,non-tradable
+481211,Nonscheduled Chartered Passenger Air Transportation,non-tradable,non-tradable
+481212,Nonscheduled Chartered Freight Air Transportation,tradable,non-tradable
+481219,Other Nonscheduled Air Transportation,tradable,non-tradable
+483111,Deep Sea Freight Transportation,tradable,tradable
+483112,Deep Sea Passenger Transportation,tradable,tradable
+483113,Coastal and Great Lakes Freight Transportation,tradable,tradable
+483114,Coastal and Great Lakes Passenger Transportation,tradable,tradable
+483211,Inland Water Freight Transportation,tradable,tradable
+483212,Inland Water Passenger Transportation,tradable,tradable
+484110,"General Freight Trucking, Local",non-tradable,non-tradable
+484121,"General Freight Trucking, Long-Distance, Truckload",non-tradable,non-tradable
+484122,"General Freight Trucking, Long-Distance, Less Than Truckload",non-tradable,non-tradable
+484210,Used Household and Office Goods Moving,non-tradable,non-tradable
+484220,"Specialized Freight (except Used Goods) Trucking, Local",non-tradable,non-tradable
+484230,"Specialized Freight (except Used Goods) Trucking, Long-Distance",non-tradable,non-tradable
+485111,Mixed Mode Transit Systems,tradable,tradable
+485112,Commuter Rail Systems,tradable,tradable
+485113,Bus and Other Motor Vehicle Transit Systems,tradable,tradable
+485119,Other Urban Transit Systems,tradable,tradable
+485210,Interurban and Rural Bus Transportation,tradable,tradable
+485310,Taxi Service,non-tradable,non-tradable
+485320,Limousine Service,non-tradable,non-tradable
+485410,School and Employee Bus Transportation,non-tradable,non-tradable
+485510,Charter Bus Industry,non-tradable,non-tradable
+485991,Special Needs Transportation,non-tradable,non-tradable
+485999,All Other Transit and Ground Passenger Transportation,non-tradable,non-tradable
+486110,Pipeline Transportation of Crude Oil,tradable,tradable
+486210,Pipeline Transportation of Natural Gas,non-tradable,non-tradable
+486910,Pipeline Transportation of Refined Petroleum Products,tradable,tradable
+486990,All Other Pipeline Transportation,tradable,tradable
+487110,"Scenic and Sightseeing Transportation, Land",tradable,tradable
+487210,"Scenic and Sightseeing Transportation, Water",tradable,tradable
+487990,"Scenic and Sightseeing Transportation, Other",tradable,tradable
+488111,Air Traffic Control,tradable,non-tradable
+488119,Other Airport Operations,non-tradable,non-tradable
+488190,Other Support Activities for Air Transportation,non-tradable,non-tradable
+488210,Support Activities for Rail Transportation,non-tradable,non-tradable
+488310,Port and Harbor Operations,tradable,tradable
+488320,Marine Cargo Handling,tradable,tradable
+488330,Navigational Services to Shipping,tradable,tradable
+488390,Other Support Activities for Water Transportation,tradable,tradable
+488410,Motor Vehicle Towing,non-tradable,non-tradable
+488490,Other Support Activities for Road Transportation,non-tradable,non-tradable
+488510,Freight Transportation Arrangement,non-tradable,non-tradable
+488991,Packing and Crating,non-tradable,non-tradable
+488999,All Other Support Activities for Transportation,tradable,non-tradable
+492110,Couriers and Express Delivery Services,non-tradable,non-tradable
+492210,Local Messengers and Local Delivery,non-tradable,non-tradable
+493110,General Warehousing and Storage,non-tradable,non-tradable
+493120,Refrigerated Warehousing and Storage,non-tradable,non-tradable
+493130,Farm Product Warehousing and Storage,tradable,non-tradable
+493190,Other Warehousing and Storage,non-tradable,non-tradable
+511110,Newspaper Publishers,non-tradable,non-tradable
+511120,Periodical Publishers,non-tradable,non-tradable
+511130,Book Publishers,non-tradable,non-tradable
+511140,Directory and Mailing List Publishers,non-tradable,non-tradable
+511191,Greeting Card Publishers,tradable,tradable
+511199,All Other Publishers,tradable,tradable
+511210,Software Publishers,non-tradable,non-tradable
+512110,Motion Picture and Video Production,non-tradable,mixed
+512120,Motion Picture and Video Distribution,tradable,tradable
+512131,Motion Picture Theaters (except Drive-Ins),non-tradable,non-tradable
+512132,Drive-In Motion Picture Theaters,tradable,non-tradable
+512191,Teleproduction and Other Postproduction Services,tradable,tradable
+512199,Other Motion Picture and Video Industries,tradable,tradable
+512210,Record Production,tradable,tradable
+512220,Integrated Record Production/Distribution,tradable,tradable
+512230,Music Publishers,tradable,tradable
+512240,Sound Recording Studios,tradable,tradable
+512290,Other Sound Recording Industries,tradable,tradable
+515111,Radio Networks,non-tradable,non-tradable
+515112,Radio Stations,non-tradable,non-tradable
+515120,Television Broadcasting,non-tradable,non-tradable
+515210,Cable and Other Subscription Programming,tradable,tradable
+517110,Wired Telecommunications Carriers,non-tradable,non-tradable
+517210,Wireless Telecommunications Carriers (except Satellite),non-tradable,non-tradable
+517410,Satellite Telecommunications,tradable,tradable
+517911,Telecommunications Resellers,non-tradable,non-tradable
+517919,All Other Telecommunications,non-tradable,non-tradable
+518210,"Data Processing, Hosting, and Related Services",non-tradable,non-tradable
+519110,News Syndicates,tradable,tradable
+519120,Libraries and Archives,non-tradable,non-tradable
+519130,Internet Publishing and Broadcasting and Web Search Portals,non-tradable,non-tradable
+519190,All Other Information Services,tradable,tradable
+521110,Monetary Authorities - Central Bank,tradable,tradable
+522110,Commercial Banking,non-tradable,non-tradable
+522120,Savings Institutions,non-tradable,non-tradable
+522130,Credit Unions,non-tradable,non-tradable
+522190,Other Depository Credit Intermediation,tradable,non-tradable
+522210,Credit Card Issuing,tradable,tradable
+522220,Sales Financing,non-tradable,non-tradable
+522291,Consumer Lending,non-tradable,non-tradable
+522292,Real Estate Credit,non-tradable,non-tradable
+522293,International Trade Financing,tradable,tradable
+522294,Secondary Market Financing,tradable,tradable
+522298,All Other Nondepository Credit Intermediation,non-tradable,non-tradable
+522310,Mortgage and Nonmortgage Loan Brokers,non-tradable,non-tradable
+522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",non-tradable,non-tradable
+522390,Other Activities Related to Credit Intermediation,non-tradable,non-tradable
+523110,Investment Banking and Securities Dealing,non-tradable,mixed
+523120,Securities Brokerage,non-tradable,non-tradable
+523130,Commodity Contracts Dealing,tradable,tradable
+523140,Commodity Contracts Brokerage,tradable,tradable
+523210,Securities and Commodity Exchanges,tradable,tradable
+523910,Miscellaneous Intermediation,non-tradable,non-tradable
+523920,Portfolio Management,non-tradable,non-tradable
+523930,Investment Advice,non-tradable,non-tradable
+523991,"Trust, Fiduciary, and Custody Activities",non-tradable,non-tradable
+523999,Miscellaneous Financial Investment Activities,tradable,non-tradable
+524113,Direct Life Insurance Carriers,non-tradable,non-tradable
+524114,Direct Health and Medical Insurance Carriers,non-tradable,non-tradable
+524126,Direct Property and Casualty Insurance Carriers,non-tradable,non-tradable
+524127,Direct Title Insurance Carriers,non-tradable,non-tradable
+524128," Other Direct Insurance (except Life, Health, and Medical) Carriers",tradable,non-tradable
+524130,Reinsurance Carriers,tradable,tradable
+524210,Insurance Agencies and Brokerages,non-tradable,non-tradable
+524291,Claims Adjusting,non-tradable,non-tradable
+524292,Third Party Administration of Insurance and Pension Funds,non-tradable,non-tradable
+524298,All Other Insurance Related Activities,non-tradable,non-tradable
+525910,Open-End Investment Funds,tradable,tradable
+525990,Other Financial Vehicles,tradable,tradable
+531110,Lessors of Residential Buildings and Dwellings,non-tradable,non-tradable
+531120,Lessors of Nonresidential Buildings (except Miniwarehouses),non-tradable,non-tradable
+531130,Lessors of Miniwarehouses and Self-Storage Units,non-tradable,non-tradable
+531190,Lessors of Other Real Estate Property,non-tradable,non-tradable
+531210,Offices of Real Estate Agents and Brokers,non-tradable,non-tradable
+531311,Residential Property Managers,non-tradable,non-tradable
+531312,Nonresidential Property Managers,non-tradable,non-tradable
+531320,Offices of Real Estate Appraisers,non-tradable,non-tradable
+531390,Other Activities Related to Real Estate,non-tradable,non-tradable
+532111,Passenger Car Rental,non-tradable,non-tradable
+532112,Passenger Car Leasing,tradable,non-tradable
+532120,"Truck, Utility Trailer, and RV (Recreational Vehicle) Rental and Leasing",non-tradable,non-tradable
+532210,Consumer Electronics and Appliances Rental,non-tradable,non-tradable
+532220,Formal Wear and Costume Rental,non-tradable,non-tradable
+532230,Video Tape and Disc Rental,non-tradable,non-tradable
+532291,Home Health Equipment Rental,non-tradable,non-tradable
+532292,Recreational Goods Rental,non-tradable,non-tradable
+532299,All Other Consumer Goods Rental,non-tradable,non-tradable
+532310,General Rental Centers,non-tradable,non-tradable
+532411,"Commercial Air, Rail, and Water Transportation Equipment Rental and Leasing",tradable,tradable
+532412,"Construction, Mining, and Forestry Machinery and Equipment Rental and Leasing",non-tradable,non-tradable
+532420,Office Machinery and Equipment Rental and Leasing,tradable,tradable
+532490,Other Commercial and Industrial Machinery and Equipment Rental and Leasing,non-tradable,non-tradable
+533110,Lessors of Nonfinancial Intangible Assets (except Copyrighted Works),non-tradable,non-tradable
+541110,Offices of Lawyers,non-tradable,non-tradable
+541191,Title Abstract and Settlement Offices,non-tradable,non-tradable
+541199,All Other Legal Services,non-tradable,non-tradable
+541211,Offices of Certified Public Accountants,non-tradable,non-tradable
+541213,Tax Preparation Services,non-tradable,non-tradable
+541214,Payroll Services,non-tradable,non-tradable
+541219,Other Accounting Services,non-tradable,non-tradable
+541310,Architectural Services,non-tradable,non-tradable
+541320,Landscape Architectural Services,non-tradable,non-tradable
+541330,Engineering Services,non-tradable,non-tradable
+541340,Drafting Services,non-tradable,non-tradable
+541350,Building Inspection Services,non-tradable,non-tradable
+541360,Geophysical Surveying and Mapping Services,tradable,tradable
+541370,Surveying and Mapping (except Geophysical) Services,non-tradable,non-tradable
+541380,Testing Laboratories,non-tradable,non-tradable
+541410,Interior Design Services,non-tradable,non-tradable
+541420,Industrial Design Services,tradable,tradable
+541430,Graphic Design Services,non-tradable,non-tradable
+541490,Other Specialized Design Services,tradable,tradable
+541511,Custom Computer Programming Services,non-tradable,non-tradable
+541512,Computer Systems Design Services,non-tradable,non-tradable
+541513,Computer Facilities Management Services,non-tradable,non-tradable
+541519,Other Computer Related Services,non-tradable,non-tradable
+541611,Administrative Management and General Management Consulting Services,non-tradable,non-tradable
+541612,Human Resources Consulting Services,non-tradable,non-tradable
+541613,Marketing Consulting Services,non-tradable,non-tradable
+541614,"Process, Physical Distribution, and Logistics Consulting Services",non-tradable,non-tradable
+541618,Other Management Consulting Services,non-tradable,non-tradable
+541620,Environmental Consulting Services,non-tradable,non-tradable
+541690,Other Scientific and Technical Consulting Services,non-tradable,non-tradable
+541711,Research and Development in Biotechnology,non-tradable,non-tradable
+541712,"Reseach and Development in the Physical, Engineering, and Life Sciences (except Biotechnology)",non-tradable,non-tradable
+541720,Research and Development in the Social Sciences and Humanities,non-tradable,mixed
+541810,Advertising Agencies,non-tradable,non-tradable
+541820,Public Relations Agencies,non-tradable,mixed
+541830,Media Buying Agencies,tradable,tradable
+541840,Media Representatives,non-tradable,non-tradable
+541850,Display Advertising,non-tradable,non-tradable
+541860,Direct Mail Advertising,non-tradable,non-tradable
+541870,Advertising Material Distribution Services,tradable,tradable
+541890,Other Services Related to Advertising,non-tradable,non-tradable
+541910,Marketing Research and Public Opinion Polling,non-tradable,non-tradable
+541921,"Photography Studios, Portrait",non-tradable,non-tradable
+541922,Commercial Photography,non-tradable,non-tradable
+541930,Translation and Interpretation Services,non-tradable,non-tradable
+541940,Veterinary Services,non-tradable,non-tradable
+541990,"All Other Professional, Scientific, and Technical Services",non-tradable,non-tradable
+551111,Offices of Bank Holding Companies,non-tradable,non-tradable
+551112,Offices of Other Holding Companies,non-tradable,non-tradable
+551114,"Corporate, Subsidiary, and Regional Managing Offices",non-tradable,non-tradable
+561110,Office Administrative Services,non-tradable,non-tradable
+561210,Facilities Support Services,non-tradable,non-tradable
+561311,Employment Placement Agencies,non-tradable,non-tradable
+561312,Executive Search Services,non-tradable,non-tradable
+561320,Temporary Help Services,non-tradable,non-tradable
+561330,Professional Employer Organizations,non-tradable,mixed
+561410,Document Preparation Services,non-tradable,non-tradable
+561421,Telephone Answering Services,non-tradable,non-tradable
+561422,Telemarketing Bureaus and Other Contact Centers,non-tradable,non-tradable
+561431,Private Mail Centers,non-tradable,non-tradable
+561439,Other Business Service Centers (including Copy Shops),non-tradable,non-tradable
+561440,Collection Agencies,non-tradable,non-tradable
+561450,Credit Bureaus,tradable,tradable
+561491,Repossession Services,non-tradable,non-tradable
+561492,Court Reporting and Stenotype Services,non-tradable,non-tradable
+561499,All Other Business Support Services,non-tradable,non-tradable
+561510,Travel Agencies,non-tradable,non-tradable
+561520,Tour Operators,non-tradable,non-tradable
+561591,Convention and Visitors Bureaus,non-tradable,non-tradable
+561599,All Other Travel Arrangement and Reservation Services,non-tradable,non-tradable
+561611,Investigation Services,non-tradable,non-tradable
+561612,Security Guards and Patrol Services,non-tradable,non-tradable
+561613,Armored Car Services,non-tradable,non-tradable
+561621,Security Systems Services (except Locksmiths),non-tradable,non-tradable
+561622,Locksmiths,non-tradable,non-tradable
+561710,Exterminating and Pest Control Services,non-tradable,non-tradable
+561720,Janitorial Services,non-tradable,non-tradable
+561730,Landscaping Services,non-tradable,non-tradable
+561740,Carpet and Upholstery Cleaning Services,non-tradable,non-tradable
+561790,Other Services to Buildings and Dwellings,non-tradable,non-tradable
+561910,Packaging and Labeling Services,non-tradable,non-tradable
+561920,Convention and Trade Show Organizers,non-tradable,non-tradable
+561990,All Other Support Services,non-tradable,non-tradable
+562111,Solid Waste Collection,non-tradable,non-tradable
+562112,Hazardous Waste Collection,tradable,non-tradable
+562119,Other Waste Collection,non-tradable,non-tradable
+562211,Hazardous Waste Treatment and Disposal,non-tradable,non-tradable
+562212,Solid Waste Landfill,non-tradable,non-tradable
+562213,Solid Waste Combustors and Incinerators,tradable,non-tradable
+562219,Other Nonhazardous Waste Treatment and Disposal,tradable,non-tradable
+562910,Remediation Services,non-tradable,non-tradable
+562920,Materials Recovery Facilities,non-tradable,non-tradable
+562991,Septic Tank and Related Services,non-tradable,non-tradable
+562998,All Other Miscellaneous Waste Management Services,non-tradable,non-tradable
+611110,Elementary and Secondary Schools,non-tradable,non-tradable
+611210,Junior Colleges,non-tradable,non-tradable
+611310,"Colleges, Universities, and Professional Schools",non-tradable,non-tradable
+611410,Business and Secretarial Schools,tradable,non-tradable
+611420,Computer Training,non-tradable,non-tradable
+611430,Professional and Management Development Training,non-tradable,non-tradable
+611511,Cosmetology and Barber Schools,non-tradable,non-tradable
+611512,Flight Training,tradable,non-tradable
+611513,Apprenticeship Training,non-tradable,non-tradable
+611519,Other Technical and Trade Schools,non-tradable,non-tradable
+611610,Fine Arts Schools,non-tradable,non-tradable
+611620,Sports and Recreation Instruction,non-tradable,non-tradable
+611630,Language Schools,tradable,non-tradable
+611691,Exam Preparation and Tutoring,non-tradable,non-tradable
+611692,Automobile Driving Schools,non-tradable,non-tradable
+611699,All Other Miscellaneous Schools and Instruction,non-tradable,non-tradable
+611710,Educational Support Services,non-tradable,non-tradable
+621111,Offices of Physicians (except Mental Health Specialists),non-tradable,non-tradable
+621112,"Offices of Physicians, Mental Health Specialists",non-tradable,non-tradable
+621210,Offices of Dentists,non-tradable,non-tradable
+621310,Offices of Chiropractors,non-tradable,non-tradable
+621320,Offices of Optometrists,non-tradable,non-tradable
+621330,Offices of Mental Health Practitioners (except Physicians),non-tradable,non-tradable
+621340,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",non-tradable,non-tradable
+621391,Offices of Podiatrists,non-tradable,non-tradable
+621399,Offices of All Other Miscellaneous Health Practitioners,non-tradable,non-tradable
+621410,Family Planning Centers,non-tradable,non-tradable
+621420,Outpatient Mental Health and Substance Abuse Centers,non-tradable,non-tradable
+621491,HMO Medical Centers,tradable,non-tradable
+621492,Kidney Dialysis Centers,non-tradable,non-tradable
+621493,Freestanding Ambulatory Surgical and Emergency Centers,non-tradable,non-tradable
+621498,All Other Outpatient Care Centers,non-tradable,non-tradable
+621511,Medical Laboratories,non-tradable,non-tradable
+621512,Diagnostic Imaging Centers,non-tradable,non-tradable
+621610,Home Health Care Services,non-tradable,non-tradable
+621910,Ambulance Services,non-tradable,non-tradable
+621991,Blood and Organ Banks,non-tradable,non-tradable
+621999,All Other Miscellaneous Ambulatory Health Care Services,non-tradable,non-tradable
+622110,General Medical and Surgical Hospitals,non-tradable,non-tradable
+622210,Psychiatric and Substance Abuse Hospitals,tradable,tradable
+622310,Specialty (except Psychiatric and Substance Abuse) Hospitals,tradable,tradable
+623110,Nursing Care Facilities,non-tradable,non-tradable
+623210,Residential Mental Retardation Facilities,non-tradable,non-tradable
+623220,Residential Mental Health and Substance Abuse Facilities,non-tradable,non-tradable
+623311,Continuing Care Retirement Communities,non-tradable,non-tradable
+623312,Homes for the Elderly,non-tradable,non-tradable
+623990,Other Residential Care Facilities,non-tradable,non-tradable
+624110,Child and Youth Services,non-tradable,non-tradable
+624120,Services for the Elderly and Persons with Disabilities,non-tradable,non-tradable
+624190,Other Individual and Family Services,non-tradable,non-tradable
+624210,Community Food Services,non-tradable,non-tradable
+624221,Temporary Shelters,non-tradable,non-tradable
+624229,Other Community Housing Services,non-tradable,non-tradable
+624230,Emergency and Other Relief Services,non-tradable,non-tradable
+624310,Vocational Rehabilitation Services,non-tradable,non-tradable
+624410,Child Day Care Services,non-tradable,non-tradable
+711110,Theater Companies and Dinner Theaters,non-tradable,non-tradable
+711120,Dance Companies,tradable,non-tradable
+711130,Musical Groups and Artists,non-tradable,non-tradable
+711190,Other Performing Arts Companies,tradable,non-tradable
+711211,Sports Teams and Clubs,tradable,non-tradable
+711212,Racetracks,non-tradable,non-tradable
+711219,Other Spectator Sports,non-tradable,non-tradable
+711310,"Promoters of Performing Arts, Sports, and Similar Events with Facilities",non-tradable,non-tradable
+711320,"Promoters of Performing Arts, Sports, and Similar Events without Facilities",non-tradable,non-tradable
+711410,"Agents and Managers for Artists, Athletes, Entertainers, and Other Public Figures",tradable,tradable
+711510," Independent Artists, Writers, and Performers",non-tradable,mixed
+712110,Museums,non-tradable,non-tradable
+712120,Historical Sites,non-tradable,non-tradable
+712130,Zoos and Botanical Gardens,tradable,non-tradable
+712190,Nature Parks and Other Similar Institutions,non-tradable,non-tradable
+713110,Amusement and Theme Parks,tradable,non-tradable
+713120,Amusement Arcades,non-tradable,non-tradable
+713210,Casinos (except Casino Hotels),tradable,non-tradable
+713290,Other Gambling Industries,non-tradable,non-tradable
+713910,Golf Courses and Country Clubs,non-tradable,non-tradable
+713920,Skiing Facilities,tradable,non-tradable
+713930,Marinas,non-tradable,non-tradable
+713940,Fitness and Recreational Sports Centers,non-tradable,non-tradable
+713950,Bowling Centers,non-tradable,non-tradable
+713990,All Other Amusement and Recreation Industries,non-tradable,non-tradable
+721110,Hotels (except Casino Hotels) and Motels,non-tradable,non-tradable
+721120,Casino Hotels,tradable,non-tradable
+721191,Bed-and-Breakfast Inns,non-tradable,non-tradable
+721199,All Other Traveler Accommodation,tradable,non-tradable
+721211,RV (Recreational Vehicle) Parks and Campgrounds,non-tradable,non-tradable
+721214,Recreational and Vacation Camps (except Campgrounds),non-tradable,non-tradable
+721310,Rooming and Boarding Houses,non-tradable,non-tradable
+722110,Full-Service Restaurants,non-tradable,non-tradable
+722211,Limited-Service Restaurants,non-tradable,non-tradable
+722212,"Cafeterias, Grill Buffets, and Buffets",non-tradable,non-tradable
+722213,Snack and Nonalcoholic Beverage Bars,non-tradable,non-tradable
+722310,Food Service Contractors,non-tradable,non-tradable
+722320,Caterers,non-tradable,non-tradable
+722330,Mobile Food Services,non-tradable,non-tradable
+722410,Drinking Places (Alcoholic Beverages),non-tradable,non-tradable
+811111,General Automotive Repair,non-tradable,non-tradable
+811112,Automotive Exhaust System Repair,non-tradable,non-tradable
+811113,Automotive Transmission Repair,non-tradable,non-tradable
+811118,Other Automotive Mechanical and Electrical Repair and Maintenance,non-tradable,non-tradable
+811121,"Automotive Body, Paint, and Interior Repair and Maintenance",non-tradable,non-tradable
+811122,Automotive Glass Replacement Shops,non-tradable,non-tradable
+811191,Automotive Oil Change and Lubrication Shops,non-tradable,non-tradable
+811192,Car Washes,non-tradable,non-tradable
+811198,All Other Automotive Repair and Maintenance,non-tradable,non-tradable
+811211,Consumer Electronics Repair and Maintenance,non-tradable,non-tradable
+811212,Computer and Office Machine Repair and Maintenance,non-tradable,non-tradable
+811213,Communication Equipment Repair and Maintenance,non-tradable,non-tradable
+811219,Other Electronic and Precision Equipment Repair and Maintenance,non-tradable,non-tradable
+811310,Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance,non-tradable,non-tradable
+811411,Home and Garden Equipment Repair and Maintenance,non-tradable,non-tradable
+811412,Appliance Repair and Maintenance,non-tradable,non-tradable
+811420,Reupholstery and Furniture Repair,non-tradable,non-tradable
+811430,Footwear and Leather Goods Repair,tradable,non-tradable
+811490,Other Personal and Household Goods Repair and Maintenance,non-tradable,non-tradable
+812111,Barber Shops,non-tradable,non-tradable
+812112,Beauty Salons,non-tradable,non-tradable
+812113,Nail Salons,non-tradable,non-tradable
+812191,Diet and Weight Reducing Centers,non-tradable,non-tradable
+812199,Other Personal Care Services,non-tradable,non-tradable
+812210,Funeral Homes and Funeral Services,non-tradable,non-tradable
+812220,Cemeteries and Crematories,non-tradable,non-tradable
+812310,Coin-Operated Laundries and Drycleaners,non-tradable,non-tradable
+812320,Drycleaning and Laundry Services (except Coin-Operated),non-tradable,non-tradable
+812331,Linen Supply,non-tradable,non-tradable
+812332,Industrial Launderers,non-tradable,non-tradable
+812910,Pet Care (except Veterinary) Services,non-tradable,non-tradable
+812921,Photofinishing Laboratories (except One-Hour),tradable,non-tradable
+812922,One-Hour Photofinishing,tradable,non-tradable
+812930,Parking Lots and Garages,non-tradable,non-tradable
+812990,All Other Personal Services,non-tradable,non-tradable
+813110,Religious Organizations,non-tradable,non-tradable
+813211,Grantmaking Foundations,non-tradable,non-tradable
+813212,Voluntary Health Organizations,non-tradable,non-tradable
+813219,Other Grantmaking and Giving Services,non-tradable,non-tradable
+813311,Human Rights Organizations,non-tradable,non-tradable
+813312,"Environment, Conservation and Wildlife Organizations",non-tradable,non-tradable
+813319,Other Social Advocacy Organizations,non-tradable,non-tradable
+813410,Civic and Social Organizations,non-tradable,non-tradable
+813910,Business Associations,non-tradable,non-tradable
+813920,Professional Organizations,non-tradable,non-tradable
+813930,Labor Unions and Similar Labor Organizations,non-tradable,non-tradable
+813940,Political Organizations,non-tradable,non-tradable
+813990,"Other Similar Organizations (except Business, Professional, Labor, and Political Organizations)",non-tradable,non-tradable
